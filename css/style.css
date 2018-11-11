@@ -1,0 +1,469 @@
+body {
+	font-family: "Source Sans Pro", sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	background: #ffffff;
+}
+
+body p {
+	margin: 0;
+	font-size: 15px;
+	text-align: justify;
+}
+
+h1 {
+	margin: 5px 0;
+	font-size: 2.5rem;
+}
+
+h2 {
+	margin: 5px 0;
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.3rem;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 1.1rem;
+	margin: 20px 0 0 0;
+}
+
+li {
+	list-style: none;
+	font-size: 16px
+}
+
+.text-underline {
+	text-decoration: underline;
+	text-align: center;	
+}
+
+.text-underline-left {
+	text-decoration: underline;
+}
+
+.title-banner h3 {
+	margin: 0;
+} 
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a.image-1 {
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+/*** THIS SECTION PROVIDES THE CSS FOR THE CONTENT IN INDEX WEBPAGE ***/
+	
+.hero {
+    grid-area: h;
+}
+
+.title-banner {
+	grid-area: t;
+}
+
+.about {
+    grid-area: a;
+}
+
+.image-1 {
+    grid-area: i1;
+}
+
+.image-2 {
+    grid-area: i2;
+}
+
+.image-3 {
+    grid-area: i3;
+}
+
+.image-blog-1 {
+    grid-area: i4;
+}
+
+.image-blog-2 {
+    grid-area: i5;
+}
+
+.image-blog-3 {
+    grid-area: i6;
+}
+
+.blog-extract-1 {
+    grid-area: b1;
+}
+
+.blog-extract-2 {
+    grid-area: b2;
+}
+
+.blog-extract-3 {
+    grid-area: b3;
+}
+
+
+.main-container {
+    height: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 5px 5px;
+    background: white;
+
+	display: grid;
+	grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px 200px 200px auto 200px auto 200px auto 200px auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+    "i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+    "i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i4 i4 i4 i4 i4 i4 i4 i4"
+    "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1"
+    "i5 i5 i5 i5 i5 i5 i5 i5 i5 i5 i5 i5"
+    "b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2"
+    "i6 i6 i6 i6 i6 i6 i6 i6 i6 i6 i6 i6"
+    "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3";
+}
+
+@media only screen and (min-width: 500px) {
+	.main-container {
+    grid-gap: 5px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px auto 200px auto auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i2 i2 i2 i2 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i5 i5 i5 i5 i6 i6 i6 i6"
+    "b1 b1 b1 b1 b2 b2 b2 b2 b3 b3 b3 b3";
+	}
+}
+
+.posts-container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	background: lightgrey;
+}
+
+.about-container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px 10px;
+	background: lightgrey;
+	text-align: center;
+}
+
+div.posts-container img {
+	display: block;
+	margin: 20px auto; /*** IS THIS A BIT HACKY TO ALIGN IMG IN THE CENTER? ***/
+}
+
+img.profile {
+	border-radius: 70px;
+	margin: 15px;
+}
+
+.blog-container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 10px;
+	background: lightgrey;
+}
+
+p.blog-container {
+	font-size: 12px;
+	text-align: justify;
+}
+	
+p.hero-tagline {
+	font-style: oblique;
+	font-size: 15px;
+	margin: 10px 0;
+	padding: 0 100px;
+	text-align: center;
+}
+
+
+.hero {
+	color: #fff;
+	background-image: url('/images/bird.jpg');
+	background-size: cover;
+	background-position: bottom center;
+	text-align: center;
+}
+
+.image-1 {
+	color: #fff;
+	background-image: url('/images/bund.jpg');
+	background-size: cover;
+	background-position: 0 40%;
+}
+
+.image-2 {
+	color: #fff;
+	background-image: url('/images/laplaya.jpg');
+	background-size: cover;
+}
+
+.image-3 {
+	color: #fff;
+	background-image: url('/images/dj-2.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.image-blog-1, .image-blog-2, .image-blog-3 {
+	color: #fff;
+	background-size: cover;
+	background-position: center;
+}
+
+section.hero-container {
+	margin: 0 auto;
+	max-width: 700px;
+}
+
+
+.hero-blog-home {
+	margin: 0 auto;
+	padding: 100px 10px;
+	max-width: 700px;
+	color: #fff;
+	background-image: url('/images/tajamulco.jpg');
+	background-size: cover;
+	background-position: 100% 60%;
+	text-align: center;	
+}
+
+.featured-image-banner {
+	margin: 0 auto;
+	padding: 150px 10px;
+	max-width: 700px;
+	background-size: cover;
+	background-position: 100% 50%;
+	text-align: center;
+	color: white;
+}
+
+
+.main-container > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+
+div.title-banner {
+	margin: 25px 0 5px 0;
+	color: black;
+	text-align: center;
+}
+
+div.about, div.blog-extract-1, div.blog-extract-2, div.blog-extract-3 {
+	padding: 20px 30px;
+	background-color: lightgrey;
+	color: black;
+	text-align: justify;
+}
+
+section.about {
+	text-align: center;
+}
+
+section.about p {
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+}
+
+
+div.grid-button {
+	display: grid;
+}
+
+
+
+
+/*** THIS SECTION PROVIDES THE CSS FOR THE HEADER AND FOOTER IN DEFAULT LAYOUTS ***/
+
+
+div.header, div.footer {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+div.header {
+	padding: 5px 0;
+}
+
+header a,
+section.hero a,
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+header,
+footer {
+	background: #1D1D1D;
+	color: #ffffff;
+}
+
+nav.main-nav, .footer-nav  {
+	display: flex;
+	padding: 0 20px;
+}
+
+nav.main-nav  > li:nth-child(2) {
+    margin-left: auto;
+}
+
+nav.footer-nav  > li:nth-child(2) {
+    margin-left: auto;
+}
+
+nav.main-nav li, .footer-nav li {
+	margin: 0;
+	padding: 0 10px;
+	list-style: none;
+}
+
+nav.main-nav a {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/** SIGN UP FORM CSS **/
+#mc_embed_signup {
+	margin: 0px 0;
+}
+
+.footer-nav li {
+	display: block;
+	margin: 10px 0 0 0;
+}
+
+
+/** BLOG **/
+
+.post-wrapper {
+	margin: 0 0 0 0;
+	padding: 0 40px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.post-wrapper-home {
+	margin: 0 0 0 0;
+	padding: 0;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.post-wrapper-about {
+	margin: 0 0 0 0;
+	padding: 0 100px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+p.post-exceprt {
+	font-style: italic;
+}
+
+.post-meta {
+	font-size: 12px;
+	color: grey;
+	margin: 0 0 5px 0;
+}
+
+.bottom-line {
+  width: 100%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+
+/** ABOUT **/
+
+.hero-blog-home {
+	margin: 0 auto;
+	padding: 100px 10px;
+	max-width: 700px;
+	color: #fff;
+	background-image: url('/images/tajamulco.jpg');
+	background-size: cover;
+	background-position: 100% 60%;
+	text-align: center;	
+}
+
+
+/** ABOUT **/
+
+.hero-about {
+	margin: 0 auto;
+	padding: 100px 10px;
+	max-width: 700px;
+	color: #fff;
+	background-image: url('/images/bund-2-slate.jpg');
+	background-size: cover;
+	background-position: 10% 20%;
+	text-align: center;	
+}
+
+/** MUSIC **/
+
+.hero-music {
+	margin: 0 auto;
+	padding: 100px 10px;
+	max-width: 700px;
+	color: #fff;
+	background-image: url('/images/fritz.jpg');
+	background-size: cover;
+	background-position: 100% 50%;
+	text-align: center;	
+}
+
+/** TRAVEL **/
+
+.hero-travel {
+	margin: 0 auto;
+	padding: 100px 10px;
+	max-width: 700px;
+	color: #fff;
+	background-image: url('/images/surf.jpg');
+	background-size: cover;
+	background-position: 100% 40%;
+	text-align: center;	
+}
+
+@media only screen and (max-width: 500px) {
+	.hero-tagline {
+		display: none;
+	}
+	.hero{
+		padding: 0 0 120px 0;
+	}
+
+	.post-wrapper {
+	padding: 0 10px;
+	}
+
+	.post-wrapper-about {
+	padding: 0 10px;
+	}
+}

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="featured-image-banner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+	<section class="hero-container-blog"></section><!-- No text in banner yet-->
+</div>
+
+<div class="blog-container">
+	<h2 class="">{{ page.title }}</h2>
+	<p class="post-meta">{{ page.date | date: '%B %d, %Y' }} | {{ page.author }} | {{ page.category }}</p>
+	<p>{{ content }}</p>
+
+</div>
