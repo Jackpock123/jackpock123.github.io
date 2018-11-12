@@ -199,7 +199,7 @@ p.hero-tagline {
 
 .hero {
 	color: #fff;
-	background-image: url('/images/bird.jpg');
+	background-image: url('/images/bird.JPG');
 	background-size: cover;
 	background-position: bottom center;
 	text-align: center;
@@ -214,7 +214,7 @@ p.hero-tagline {
 
 .image-2 {
 	color: #fff;
-	background-image: url('/images/laplaya-2.jpg');
+	background-image: url('/images/laplaya-2.JPG');
 	background-size: cover;
 }
 
@@ -234,18 +234,6 @@ p.hero-tagline {
 section.hero-container {
 	margin: 0 auto;
 	max-width: 700px;
-}
-
-
-.hero-blog-home {
-	margin: 0 auto;
-	padding: 100px 10px;
-	max-width: 700px;
-	color: #fff;
-	background-image: url('/images/tajamulco.jpg');
-	background-size: cover;
-	background-position: 100% 60%;
-	text-align: center;	
 }
 
 .featured-image-banner {
@@ -405,7 +393,7 @@ p.post-exceprt {
 	padding: 100px 10px;
 	max-width: 700px;
 	color: #fff;
-	background-image: url('/images/tajamulco.jpg');
+	background-image: url('/images/tajamulco.JPG');
 	background-size: cover;
 	background-position: 100% 60%;
 	text-align: center;	
@@ -432,7 +420,7 @@ p.post-exceprt {
 	padding: 100px 10px;
 	max-width: 700px;
 	color: #fff;
-	background-image: url('/images/fritz.jpg');
+	background-image: url('/images/fritz.JPG');
 	background-size: cover;
 	background-position: 100% 50%;
 	text-align: center;	
@@ -445,7 +433,7 @@ p.post-exceprt {
 	padding: 100px 10px;
 	max-width: 700px;
 	color: #fff;
-	background-image: url('/images/surf.jpg');
+	background-image: url('/images/surf.JPG');
 	background-size: cover;
 	background-position: 100% 40%;
 	text-align: center;	

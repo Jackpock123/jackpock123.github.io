@@ -3,7 +3,7 @@ layout: post
 author: Joe Jackson
 post-title: Welcome to this space! 
 category: Update
-featured-img: /images/dunes.jpg 
+featured-img: /images/dunes.JPG 
 ---
 It's taken a while but finally, it's here! Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

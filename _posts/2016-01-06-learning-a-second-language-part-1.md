@@ -3,7 +3,7 @@ layout: post
 category: Language
 post-title: Blog Series 1.1 / Studying Your Second Language / Goal Setting
 author: Joe Jackson
-featured-img: /images/noodles.jpg
+featured-img: /images/noodles.JPG
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

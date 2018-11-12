@@ -3,7 +3,7 @@ layout: post
 category: Language
 post-title: Blog Series 1.0 / Studying Your Second Language / Intro
 author: Joe Jackson
-featured-img: /images/wall.jpg 
+featured-img: /images/wall.JPG 
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
