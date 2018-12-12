@@ -1,5 +1,5 @@
 body {
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: sans-serif;
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
@@ -8,8 +8,12 @@ body {
 
 body p {
 	margin: 0;
-	font-size: 15px;
+	font-size: 16px;
 	text-align: justify;
+}
+
+h1, h2, h3, h4 {
+	font-family: serif;
 }
 
 h1 {
@@ -24,12 +28,12 @@ h2 {
 
 h3 {
 	font-size: 1.3rem;
-	margin: 10px 0;
+	margin: 20px 0 10px 0;
 }
 
 h4 {
 	font-size: 1.1rem;
-	margin: 20px 0 0 0;
+	margin: 5px 0;
 }
 
 li {
@@ -53,6 +57,10 @@ li {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+a:hover {
+	color: grey;
 }
 
 a.image-1 {
@@ -116,11 +124,10 @@ a.image-1 {
     height: 100%;
     max-width: 940px;
     margin: 0 auto;
-    padding: 5px 5px;
     background: white;
 
 	display: grid;
-	grid-gap: 3px;
+	grid-gap: 20px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 300px 200px 200px 200px auto 200px auto 200px auto 200px auto;
     grid-template-areas: 
@@ -139,7 +146,7 @@ a.image-1 {
 
 @media only screen and (min-width: 500px) {
 	.main-container {
-    grid-gap: 5px;
+    grid-gap: 20px; /*** NOTE THE HACK WITH THE IMAGE-BLOG MARGINS TO REDUCE TO GRID GAP WITH BLOG PREVIEW  ***/
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 300px 200px auto 200px auto auto;
     grid-template-areas: 
@@ -154,15 +161,15 @@ a.image-1 {
 .posts-container {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 10px 10px;
-	background: lightgrey;
+	padding: 30px 10px;
+	background: transparent;
 }
 
 .about-container {
 	max-width: 700px;
 	margin: 0 auto;
-	padding: 10px 10px;
-	background: lightgrey;
+	padding: 30px 10px;
+	background: transparent;
 	text-align: center;
 }
 
@@ -177,10 +184,10 @@ img.profile {
 }
 
 .blog-container {
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 10px;
-	background: lightgrey;
+	max-width: 500px;
+	margin: 40px auto;
+	padding: 0 30px;
+	background: transparent;
 }
 
 p.blog-container {
@@ -192,7 +199,7 @@ p.hero-tagline {
 	font-style: oblique;
 	font-size: 15px;
 	margin: 10px 0;
-	padding: 0 100px;
+	padding: 0 180px;
 	text-align: center;
 }
 
@@ -229,6 +236,7 @@ p.hero-tagline {
 	color: #fff;
 	background-size: cover;
 	background-position: center;
+	margin: 0 0 -20px 0; /*** THIS IS A BIT HACKY TO REDUCE THE GRID GAP BETWEEN THE IMAGE AND BLOG PREVIEW ***/
 }
 
 section.hero-container {
@@ -239,7 +247,7 @@ section.hero-container {
 .featured-image-banner {
 	margin: 0 auto;
 	padding: 150px 10px;
-	max-width: 700px;
+	max-width: 920px;
 	background-size: cover;
 	background-position: 100% 50%;
 	text-align: center;
@@ -288,31 +296,38 @@ div.grid-button {
 /*** THIS SECTION PROVIDES THE CSS FOR THE HEADER AND FOOTER IN DEFAULT LAYOUTS ***/
 
 
-div.header, div.footer {
-	margin: 0 auto;
-	max-width: 1000px;
-}
-
 div.header {
 	padding: 5px 0;
+	margin: 0 auto 20px auto
 }
+
+div.footer {
+	padding: 5px 0;
+	margin: 20px auto 0 auto
+}
+
 
 header a,
 section.hero a,
 footer a {
 	text-decoration: none;
-	color: #ffffff;
+	color: black;
+}
+
+footer a {
+	color: grey;
 }
 
 header,
 footer {
-	background: #1D1D1D;
+	background: transparent;
 	color: #ffffff;
+	margin: 0 auto;
+	max-width: 940px;
 }
 
 nav.main-nav, .footer-nav  {
 	display: flex;
-	padding: 0 20px;
 }
 
 nav.main-nav  > li:nth-child(2) {
@@ -350,7 +365,7 @@ nav.main-nav a {
 
 .post-wrapper {
 	margin: 0 0 0 0;
-	padding: 0 40px;
+	padding: 0 140px;
 	font-size: 14px;
 	text-align: justify;
 }
@@ -364,7 +379,7 @@ nav.main-nav a {
 
 .post-wrapper-about {
 	margin: 0 0 0 0;
-	padding: 0 100px;
+	padding: 0 140px;
 	font-size: 14px;
 	text-align: justify;
 }
@@ -376,11 +391,11 @@ p.post-exceprt {
 .post-meta {
 	font-size: 12px;
 	color: grey;
-	margin: 0 0 5px 0;
+	margin: 0 0 10px 0;
 }
 
 .bottom-line {
-  width: 100%;
+  width: 50%;
   text-align: center;
   margin: 20px auto;
 }
@@ -390,8 +405,8 @@ p.post-exceprt {
 
 .hero-blog-home {
 	margin: 0 auto;
-	padding: 100px 10px;
-	max-width: 700px;
+	padding: 130px 10px;
+	max-width: 920px;
 	color: #fff;
 	background-image: url('/images/tajamulco.JPG');
 	background-size: cover;
@@ -404,12 +419,12 @@ p.post-exceprt {
 
 .hero-about {
 	margin: 0 auto;
-	padding: 100px 10px;
-	max-width: 700px;
+	padding: 130px 10px;
+	max-width: 920px;
 	color: #fff;
-	background-image: url('/images/bund-2-slate.jpg');
+	background-image: url('/images/hucca.JPG');
 	background-size: cover;
-	background-position: 10% 20%;
+	background-position: 100% 45%;
 	text-align: center;	
 }
 
@@ -417,8 +432,8 @@ p.post-exceprt {
 
 .hero-music {
 	margin: 0 auto;
-	padding: 100px 10px;
-	max-width: 700px;
+	padding: 130px 10px;
+	max-width: 920px;
 	color: #fff;
 	background-image: url('/images/fritz.JPG');
 	background-size: cover;
@@ -430,8 +445,8 @@ p.post-exceprt {
 
 .hero-travel {
 	margin: 0 auto;
-	padding: 100px 10px;
-	max-width: 700px;
+	padding: 130px 10px;
+	max-width: 920px;
 	color: #fff;
 	background-image: url('/images/surf.JPG');
 	background-size: cover;
@@ -440,12 +455,14 @@ p.post-exceprt {
 }
 
 @media only screen and (max-width: 500px) {
-	.hero-tagline {
-		display: none;
-	}
+
 	.hero{
-		padding: 0 0 120px 0;
+		padding: 0;
 	}
+
+	p.hero-tagline {
+	padding: 0 50px;
+}
 
 	.post-wrapper {
 	padding: 0 10px;
@@ -454,4 +471,16 @@ p.post-exceprt {
 	.post-wrapper-about {
 	padding: 0 10px;
 	}
+}
+
+@media only screen and (min-width: 960px) {
+
+nav.main-nav  > li:first-child, nav.footer-nav  > li:first-child {
+	padding: 0 10px 0 0;
+}
+
+nav.main-nav  > li:last-child, nav.footer-nav  > li:last-child {
+	padding: 0 0 0 10px;
+}
+
 }
