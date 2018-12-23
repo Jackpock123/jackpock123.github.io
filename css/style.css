@@ -394,6 +394,12 @@ p.post-exceprt {
 	margin: 0 0 10px 0;
 }
 
+.post-meta-post {
+	font-size: 12px;
+	color: grey;
+	margin: 0 0 30px 0;
+}
+
 .bottom-line {
   width: 50%;
   text-align: center;
