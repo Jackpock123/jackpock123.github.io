@@ -1,58 +1,29 @@
+/*GENERAL STYLES*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 body {
-	font-family: sans-serif;
+	font-family: serif;
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
 	background: #ffffff;
-}
-
-body p {
-	margin: 0;
-	font-size: 16px;
-	text-align: justify;
-}
-
-h1, h2, h3, h4 {
-	font-family: serif;
-}
-
-h1 {
-	margin: 5px 0;
-	font-size: 2.5rem;
-}
-
-h2 {
-	margin: 5px 0;
-	font-size: 1.8rem;
-}
-
-h3 {
-	font-size: 1.3rem;
-	margin: 20px 0 10px 0;
-}
-
-h4 {
-	font-size: 1.1rem;
-	margin: 5px 0;
+	counter-reset: section;
 }
 
 li {
 	list-style: none;
-	font-size: 16px
 }
-
-.text-underline {
-	text-decoration: underline;
-	text-align: center;	
-}
-
-.text-underline-left {
-	text-decoration: underline;
-}
-
-.title-banner h3 {
-	margin: 0;
-} 
 
 a {
 	text-decoration: none;
@@ -63,14 +34,93 @@ a:hover {
 	color: grey;
 }
 
-a.image-1 {
-	text-align: center;
-	align-items: center;
-	justify-content: center;
+.caption:before {
+	counter-increment: section;
+	content: "Figure " counter(section) ": ";
 }
 
-/*** THIS SECTION PROVIDES THE CSS FOR THE CONTENT IN INDEX WEBPAGE ***/
-	
+
+.bottom-line {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.center {
+	text-align: center;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.darken {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));	
+}
+
+.darker {
+	background-image: linear-gradient(rgba(255,140,0, 0.9), rgba(255,140,0, 0.9));	
+}
+
+
+/*** DEFAULT HEADER AND FOOTER AND MAILCHIMP FORM STYLES ***/
+
+header,
+footer {
+	margin: 5px auto;
+	max-width: 920px;
+	background: transparent;
+	color: #ffffff;	
+}
+
+.main-nav, .footer-nav  {
+	display: flex;
+	overflow: hidden;
+}
+
+.nav-about {
+	margin-left: auto;
+}
+
+.footer-nav {
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav.main-nav li, .footer-nav li {
+	padding: 0 5px;
+	font-size: 1.1rem;
+}
+
+nav.main-nav li:first-child, nav.footer-nav li:first-child {
+    padding-left: 0;
+}
+
+nav.main-nav li:last-child, nav.footer-nav li:last-child {
+    padding-right: 0;
+}
+
+header a {
+	color: black;
+}
+
+footer a {
+	color: grey;
+}
+
+
+/*STYLES FOR MOBILE HEADER*/
+.main-nav .icon {
+	display: none;
+}
+
+
+/*HOMEPAGE STYLES*/
+
 .hero {
     grid-area: h;
 }
@@ -83,15 +133,18 @@ a.image-1 {
     grid-area: a;
 }
 
-.image-1 {
+.home-image-1 {
+	background-image: url('/images/bund.jpg');
     grid-area: i1;
 }
 
-.image-2 {
+.home-image-2 {
+	background-image: url('/images/laplaya-2.JPG');
     grid-area: i2;
 }
 
-.image-3 {
+.home-image-3 {
+	background-image: url('/images/dj-2.jpg');
     grid-area: i3;
 }
 
@@ -119,11 +172,11 @@ a.image-1 {
     grid-area: b3;
 }
 
-
 .main-container {
     height: 100%;
-    max-width: 940px;
+    max-width: 920px;
     margin: 0 auto;
+    padding: 0;
     background: white;
 
 	display: grid;
@@ -144,7 +197,668 @@ a.image-1 {
     "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3";
 }
 
-@media only screen and (min-width: 500px) {
+.hero {
+	display: flex;
+	color: #fff;
+	text-align: center;
+}
+
+.home-hero-1, .home-hero-2, .home-hero-3 {
+	display: none;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-size: cover;
+	background-position: bottom center;
+	
+}
+
+.home-hero-1 {
+	background-image: url('/images/bird.JPG');
+}
+
+.home-hero-2 {
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),*/ url('/images/wall.JPG');
+	background-position: center center;
+
+}
+
+.home-hero-3 {
+	background-image: /*linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/ url('/images/fritz.JPG');
+	background-position: 50% center;
+}
+
+.home-hero-text {
+	margin: auto 0;
+	height: 80%;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+.home-hero-container {
+	max-width: 400px;
+}
+
+.home-hero-container h1 {
+	margin-bottom: 3px;
+	font-size: 4rem;
+	font-weight: 500;
+}
+
+.home-hero-container h3 {
+	margin-bottom: 5px	;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.home-hero-container h4 {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.home-hero-button {
+	justify-content: center;
+	align-items: flex-end;
+	z-index: 1;
+}
+
+.caption-text {
+	font-size: 0.8rem;
+	padding: 3px;
+}
+
+.number-text {
+	font-size: 0.8rem;
+	padding: 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+} 
+
+.active, .dot:hover {
+  background-color: #bbb;
+}
+
+/*CSS animation for carousel*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-image-1, .home-image-2, .home-image-3, .image-blog-1, .image-blog-2, .image-blog-3, 
+.travel-image-1, .travel-image-2, .travel-image-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-size: cover;
+	background-position: 0 25%;
+}
+
+.home-image-1 h2, .home-image-2 h2, .home-image-3 h2, .travel-image-1 h2, .travel-image-2 h2, .travel-image-3 h2  {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.title-banner {
+	text-align: center;
+}
+
+.title-banner h2 {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.image-blog-1, .image-blog-2, .image-blog-3 {
+	margin: 0 0 -20px 0;
+}
+
+.blog-extract-1, .blog-extract-2, .blog-extract-3 {
+	padding: 20px;
+	background-color: lightgrey;
+	color: black;
+	text-align: justify;
+}
+
+h4.blog-extract-title {
+	margin-bottom: 3px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+h5.post-meta {
+	font-size: 0.7rem;
+	color: grey;
+	margin: 0 0 5px 0;
+}
+
+h6.post-excerpt {
+	font-size: 0.9rem;
+	font-style: oblique;
+}
+
+
+/*GENERAL STYLES FOR SUBPAGES*/ 
+
+.hero-about, .hero-travel, .hero-music, .hero-blog-home, .hero-blog-post, .hero-fc,
+.hero-travel-colombia, .hero-travel-country {
+	max-width: 920px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0;	
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+.hero-container-standard h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.content-container-standard {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 450px;
+	text-align: center;
+}
+
+.content-container-standard h3 {
+	margin-bottom: 20px	;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content-container-standard p {
+	margin: 15px 0;
+	text-align: justify;
+	line-height: 1.2rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+
+/*ABOUT STYLES*/
+
+.hero-about {
+	background-image: url('/images/hucca.JPG');
+	background-size: cover;
+	background-position: 0 48%;	
+}
+
+/*TRAVEL HOME STYLES*/
+.hero-travel {
+	background-image: url('/images/surf.JPG');
+	background-size: cover;
+	background-position: 0 40%;
+}
+
+.travel-image-container {
+	margin: 10px auto;	
+	max-width: 920px;
+	display: grid;
+	grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.travel-image-1 {
+	background-image: url('/images/travel/colombia/twilight.jpg');
+}
+
+.travel-image-2 {
+	background-image: url('/images/travel/ecuador/cathedral.jpg');
+}
+
+.travel-image-3 {
+	background-image: url('/images/travel/spain/granada-3.jpg');
+}
+
+.profile {
+	border-radius: 50%;
+}
+
+.hero-travel-country {
+	background-size: cover;
+	background-position: 0 60%;
+	margin-bottom: 3px;
+}
+
+
+.travel-image-grid {
+	margin: 0 auto;
+	max-width: 920px;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-auto-rows: 150px;
+	grid-auto-flow: dense;
+}
+
+.travel-image-grid img {
+	image-orientation: from-image;
+}
+
+.grid-horizontal-image {
+    grid-column: span 2;
+}
+
+.grid-vertical-image {
+    grid-row: span 2;
+}
+
+.grid-big-image {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.travel-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*This is the CSS to get the caption to show over the image grid*/
+/*It feels very hacky but not sure how to do this otherwise when using CSS Grids*/
+
+.grid-caption {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+}
+
+.grid-caption h6 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.grid-caption h6:hover {
+	background-color: #555;
+}
+
+
+/*MUSIC STYLES*/
+.hero-music {
+	background-image: url('/images/fritz.JPG');
+	background-size: cover;
+	background-position: 0 50%;	
+}
+.music-content {
+	text-align: left;
+}
+
+
+/*F&C STYLES*/
+.hero-fc {
+	background-image: url('/images/fnc-hero.PNG');
+	background-size: contain;
+	background-position: 0 40%;	
+}
+
+.content-container-fc {
+	margin: 10px auto;
+	max-width: 920px;
+	text-align: center;
+}
+
+.content-container-fc h3 {
+	margin-bottom: 20px	;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content-container-fc h4 {
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+}
+
+.content-container-fc h6 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1rem;
+	color: grey;
+}
+
+.content-container-fc a:hover {
+	color: orange;
+}
+
+/*This is a bit hacky to get the bullet inside the container*/
+ul.content-list  {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.content-list li {
+	margin: 10px;
+	list-style: circle;
+	margin-bottom: 5px;
+	font-size: 1.1rem;
+}
+
+.fc-image {
+	max-width: inherit;
+	margin: 20px 0;
+	height: 200px;	
+	background-attachment: fixed;
+	background-position: bottom top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fc-image {
+	background-image: url('/images/site-photo.JPG');
+}
+
+.content-image {
+    margin: 0 0 0px 0;
+}
+
+.content-image img {
+    width: 100%;
+}
+
+
+/*Full page tab styles https://www.w3schools.com/howto/howto_js_full_page_tabs.asp*/
+
+.tab-links {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+button.tablink {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 60px;
+	background-color: #555;
+	color: white;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 16px;
+	font-size: 1.1rem;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+.tabcontent {
+	color: black;
+	display: none;
+	text-align: justify;
+}
+
+#tab-content-1 {
+	background-color: white;
+}
+#tab-content-2 {
+	background-color: white;
+}
+#tab-content-3 {
+	background-color: white;
+}
+#tab-content-4 {
+	background-color: white;
+}
+
+
+
+
+
+
+
+/*Collapsible button based on W3 Schools*/
+
+.collapsible-set {
+	margin: 20px 0;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button {
+	width: 100%;
+	padding: 10px 5px;
+	display: inline-block;
+	background-color: #777;
+	color: white;
+	cursor: pointer;	
+	outline: none;
+	border: none;
+	text-align: left;
+	/*Have to define the font styles again but not sure why*/
+	font-family: serif;
+	font-size: 1.1rem;
+}
+
+.active-collapsible, .collapsible-button:hover {
+	background-color: #555;
+}
+
+.collapsible-button-content {
+	max-height: 0;
+	padding: 0px;
+	background-color: #f1f1f1;	
+	overflow: hidden;
+	text-align: left;
+	transition: max-height 0.2s ease-out;
+}
+
+.collapsible-button-content p {
+	padding: 0 15px;
+}
+
+.collapsible-button:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active-collapsible:after {
+  content: "\2212";
+}
+
+
+
+
+/*BLOG HOME STYLES*/
+.hero-blog-home {
+	background-image: url('/images/tajamulco.JPG');
+	background-size: cover;
+	background-position: 0 60%;
+}
+
+.blog-home-excrept {
+	text-align: left;
+}
+
+.blog-home-excrept h4, .content-container-post h4 {
+	text-align: left;
+	margin-bottom: 3px;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.blog-home-excrept p {
+	font-size: 1rem;
+}
+
+/*BLOG POST STYLES*/
+
+.hero-blog-post {
+	background-size: cover;
+	background-position: 0 60%;
+}
+
+
+.content-container-post {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 450px;
+	text-align: left;
+}
+
+.content-container-post h3 {
+	margin-bottom: 20px	;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content-container-post p {
+	margin: 15px 0;
+	text-align: justify;
+	line-height: 1.2rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+
+/*MEDIA QUERIES*/
+/*Media query for mobile navigation header*/
+@media only screen and (max-width: 600px) {
+
+	.main-nav li:not(:first-child) {
+		display: none;
+	}
+
+	.main-nav .icon {
+		display: block;
+		margin-left: auto;
+		float: right;
+	}
+
+	.responsive {
+		display: block;
+	}
+
+	.responsive {
+		background-color: lightgrey;
+	}
+
+
+	.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	.responsive li:not(:first-child) {
+		float: none;
+		display: block;
+		text-align: left;
+		display: block;
+	}
+
+	nav.main-nav li:first-child {
+		padding: 5px;
+	}
+
+	nav.main-nav li {
+		margin: 0;
+		padding: 5px;
+	}
+
+	.responsive .icon {
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 5px;	
+	}
+}
+
+
+/*Media query for 1200px > x > 600px*/ 
+@media only screen and (min-width: 600px) {
+
+	.image-blog-3, .blog-extract-3 {
+		display: none;
+	}
+
+	.main-container {
+    grid-gap: 20px; /*** NOTE THE HACK WITH THE IMAGE-BLOG MARGINS TO REDUCE TO GRID GAP WITH BLOG PREVIEW  ***/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px auto 200px auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i2 i2 i2 i2 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i5 i5"
+    "b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2 b2";
+	}
+
+	.travel-image-container {
+	margin: 20px auto;	
+	max-width: 920px;
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+}
+
+}
+
+
+/*Media query for 1200px < x*/
+@media only screen and (min-width: 1100px) {
+
+	.image-blog-3, .blog-extract-3 {
+		display: inherit;
+	}
+
 	.main-container {
     grid-gap: 20px; /*** NOTE THE HACK WITH THE IMAGE-BLOG MARGINS TO REDUCE TO GRID GAP WITH BLOG PREVIEW  ***/
     grid-template-columns: repeat(12, 1fr);
@@ -158,335 +872,12 @@ a.image-1 {
 	}
 }
 
-.posts-container {
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 30px 10px;
-	background: transparent;
-}
 
-.about-container {
-	max-width: 700px;
-	margin: 0 auto;
-	padding: 30px 10px;
-	background: transparent;
-	text-align: center;
-}
 
-div.posts-container img {
-	display: block;
-	margin: 20px auto; /*** IS THIS A BIT HACKY TO ALIGN IMG IN THE CENTER? ***/
-}
 
-img.profile {
-	border-radius: 70px;
-	margin: 15px;
-}
 
-.blog-container {
-	max-width: 500px;
-	margin: 40px auto;
-	padding: 0 30px;
-	background: transparent;
-}
 
-p.blog-container {
-	font-size: 12px;
-	text-align: justify;
-}
-	
-p.hero-tagline {
-	font-style: oblique;
-	font-size: 15px;
-	margin: 10px 0;
-	padding: 0 180px;
-	text-align: center;
-}
 
 
-.hero {
-	color: #fff;
-	background-image: url('/images/bird.JPG');
-	background-size: cover;
-	background-position: bottom center;
-	text-align: center;
-}
 
-.image-1 {
-	color: #fff;
-	background-image: url('/images/bund.jpg');
-	background-size: cover;
-	background-position: 0 40%;
-}
 
-.image-2 {
-	color: #fff;
-	background-image: url('/images/laplaya-2.JPG');
-	background-size: cover;
-}
-
-.image-3 {
-	color: #fff;
-	background-image: url('/images/dj-2.jpg');
-	background-size: cover;
-	background-position: center;
-}
-
-.image-blog-1, .image-blog-2, .image-blog-3 {
-	color: #fff;
-	background-size: cover;
-	background-position: center;
-	margin: 0 0 -20px 0; /*** THIS IS A BIT HACKY TO REDUCE THE GRID GAP BETWEEN THE IMAGE AND BLOG PREVIEW ***/
-}
-
-section.hero-container {
-	margin: 0 auto;
-	max-width: 700px;
-}
-
-.featured-image-banner {
-	margin: 0 auto;
-	padding: 150px 10px;
-	max-width: 920px;
-	background-size: cover;
-	background-position: 100% 50%;
-	text-align: center;
-	color: white;
-}
-
-
-.main-container > div {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	color: #ffffff;
-}
-
-div.title-banner {
-	margin: 25px 0 5px 0;
-	color: black;
-	text-align: center;
-}
-
-div.about, div.blog-extract-1, div.blog-extract-2, div.blog-extract-3 {
-	padding: 20px 30px;
-	background-color: lightgrey;
-	color: black;
-	text-align: justify;
-}
-
-section.about {
-	text-align: center;
-}
-
-section.about p {
-	font-size: 16px;
-	text-align: center;
-	margin: 0;
-}
-
-
-div.grid-button {
-	display: grid;
-}
-
-
-
-
-/*** THIS SECTION PROVIDES THE CSS FOR THE HEADER AND FOOTER IN DEFAULT LAYOUTS ***/
-
-
-div.header {
-	padding: 5px 0;
-	margin: 0 auto 20px auto
-}
-
-div.footer {
-	padding: 5px 0;
-	margin: 20px auto 0 auto
-}
-
-
-header a,
-section.hero a,
-footer a {
-	text-decoration: none;
-	color: black;
-}
-
-footer a {
-	color: grey;
-}
-
-header,
-footer {
-	background: transparent;
-	color: #ffffff;
-	margin: 0 auto;
-	max-width: 940px;
-}
-
-nav.main-nav, .footer-nav  {
-	display: flex;
-}
-
-nav.main-nav  > li:nth-child(2) {
-    margin-left: auto;
-}
-
-nav.footer-nav  > li:nth-child(2) {
-    margin-left: auto;
-}
-
-nav.main-nav li, .footer-nav li {
-	margin: 0;
-	padding: 0 10px;
-	list-style: none;
-}
-
-nav.main-nav a {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-/** SIGN UP FORM CSS **/
-#mc_embed_signup {
-	margin: 0px 0;
-}
-
-.footer-nav li {
-	display: block;
-	margin: 10px 0 0 0;
-}
-
-
-/** BLOG **/
-
-.post-wrapper {
-	margin: 0 0 0 0;
-	padding: 0 140px;
-	font-size: 14px;
-	text-align: justify;
-}
-
-.post-wrapper-home {
-	margin: 0 0 0 0;
-	padding: 0;
-	font-size: 14px;
-	text-align: justify;
-}
-
-.post-wrapper-about {
-	margin: 0 0 0 0;
-	padding: 0 140px;
-	font-size: 14px;
-	text-align: justify;
-}
-
-p.post-exceprt {
-	font-style: italic;
-}
-
-.post-meta {
-	font-size: 12px;
-	color: grey;
-	margin: 0 0 10px 0;
-}
-
-.post-meta-post {
-	font-size: 12px;
-	color: grey;
-	margin: 0 0 30px 0;
-}
-
-.bottom-line {
-  width: 50%;
-  text-align: center;
-  margin: 20px auto;
-}
-
-
-/** ABOUT **/
-
-.hero-blog-home {
-	margin: 0 auto;
-	padding: 130px 10px;
-	max-width: 920px;
-	color: #fff;
-	background-image: url('/images/tajamulco.JPG');
-	background-size: cover;
-	background-position: 100% 60%;
-	text-align: center;	
-}
-
-
-/** ABOUT **/
-
-.hero-about {
-	margin: 0 auto;
-	padding: 130px 10px;
-	max-width: 920px;
-	color: #fff;
-	background-image: url('/images/hucca.JPG');
-	background-size: cover;
-	background-position: 100% 45%;
-	text-align: center;	
-}
-
-/** MUSIC **/
-
-.hero-music {
-	margin: 0 auto;
-	padding: 130px 10px;
-	max-width: 920px;
-	color: #fff;
-	background-image: url('/images/fritz.JPG');
-	background-size: cover;
-	background-position: 100% 50%;
-	text-align: center;	
-}
-
-/** TRAVEL **/
-
-.hero-travel {
-	margin: 0 auto;
-	padding: 130px 10px;
-	max-width: 920px;
-	color: #fff;
-	background-image: url('/images/surf.JPG');
-	background-size: cover;
-	background-position: 100% 40%;
-	text-align: center;	
-}
-
-@media only screen and (max-width: 500px) {
-
-	.hero{
-		padding: 0;
-	}
-
-	p.hero-tagline {
-	padding: 0 50px;
-}
-
-	.post-wrapper {
-	padding: 0 10px;
-	}
-
-	.post-wrapper-about {
-	padding: 0 10px;
-	}
-}
-
-@media only screen and (min-width: 960px) {
-
-nav.main-nav  > li:first-child, nav.footer-nav  > li:first-child {
-	padding: 0 10px 0 0;
-}
-
-nav.main-nav  > li:last-child, nav.footer-nav  > li:last-child {
-	padding: 0 0 0 10px;
-}
-
-}

@@ -1,44 +1,53 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>{{ page.title }}</title>
-		<link rel="stylesheet" href="/css/style.css">
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
-	</head>
-	<body>
+<head>
+	<title>{{ page.title }}</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="The personal website of Joe Jackson">	
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700" media="all">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="header">		
+		<nav class="main-nav main-nav-js">
+			<li class="nav-home"><a href="/">Joe<strong>Jackson</strong></a></li>
+			<li class="nav-about"><a href="/about.html">About</a></li>
+			<li class="nav-travel"><a href="/travel.html">Travel</a></li>
+			<li class="nav-music"><a href="/music.html">Music</a></li>
+			<li class="nav-blog"><a href="/blog.html">Blog</a></li>
+			<li class="nav-fc"><a href="/f&c.html">Founders&Coders</a></li>			
+			<a href="javascript:void(0);" class="icon">
+    			<i class="fa fa-bars"></i>
+  			</a>
+  			
+		</nav><!-- .main-nav -->		
+	</header>
 
 
-		<header>
-			<div class="header">
-				<nav class="main-nav">
-						<li><a href="/">Joe<strong>Jackson</strong></a></li>
-						<li><a href="/about.html">About</a></li>
-						<li><a href="/travel.html">Travel</a></li>
-						<li><a href="/blog.html">Blog</a></li>
-				</nav>				
-			</div>
-		</header>
+	<section class="content">
+		{{ content }}
+	</section>
 
 
-		<div class="content">
-			{{ content }}
-		</div>
+	<footer class="footer">		
+		<nav class="footer-nav">
+			<li> <a href="/">Joe<strong>Jackson</strong></a></li>
+
+			{% include newsletter.html %}
+
+			<li> <a href="https://www.instagram.com/joepockk/" target="_blank"><img src="/images/ig_outline_grey.png" alt="instagram"></a></li>
+			<!-- <li> <a href="https://www.linkedin.com/in/joe-m-jackson-37709767" target="_blank"><img src="/images/linkedin_outline_grey.png" alt="instagram"></a></li> -->
+		</nav><!-- .footer-nav -->
+	</footer>
 
 
-		<footer>
-			<div class="footer">
-				<nav class="footer-nav">
-					<li> <a href="/">Joe<strong>Jackson</strong></a></li>
+	<script src='/js/semantic.min.js'></script>
+	<script src="/js/main.js"></script>
 
-					{% include newsletter.html %}
-
-
-					<li> <a href="https://www.instagram.com/jackpock/" target="_blank"><img src="/images/ig_outline_grey.png" alt="instagram"></a></li>
-					<li> <a href="https://www.linkedin.com/in/joe-m-jackson-37709767" target="_blank"><img src="/images/linkedin_outline_grey.png" alt="instagram"></a></li>
-				</nav>
-			</div>
-		</footer>
-	</body>
+</body>
 </html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="The Royal Family News App - What are they doing!?">
+		<meta name="keywords" content="royal family, fun, activities">
+
+		<title>Royal Family Shenanigans</title>
+		
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script>
+		
+			// Our 1st List of People
+			var people = [
+				{ name: `Prince Harry`, image: `<img src="images/harry.JPG">` },
+				{ name: `Prince William`, image: `<img src="images/william.JPG">` },
+				{ name: `Prince George of Cambridge`, image: `<img src="images/george.JPG">` },
+				{ name: `Prince Charles`, image: `<img src="images/charles.JPG">` },
+				{ name: `Queen Elizabeth II`, image: `<img src="images/queen.JPG">` }
+			];
+
+
+			// Our 2nd List of People
+			var morePeople = [
+				{ name: `Catherine the Duchess of Cambridge`, image: `<img src="images/kate.JPG">` },
+				{ name: `Meghan the Duchess of Sussex`, image: `<img src="images/meghan.JPG">` },
+				{ name: `Princess Charlotte of Cambridge`, image: `<img src="images/charlotte.JPG">` },
+				{ name: `Elton John`, image: `<img src="images/elton.JPG">` },
+				{ name: `James Corden`, image: `<img src="images/james.JPG">` },
+				{ name: `David Beckham`, image: `<img src="images/david.JPG">` }			
+			];
+
+			// Our List of News
+			var news = [
+				{ name: `going to ballet classes`, image: `<img src="images/ballet.JPG">` },
+				{ name: `flying around the world on a private jet, in their words "just for fun..."`, image: `<img src="images/jet.JPG">` },
+				{ name: `thinking of new ways to spend all of the taxpayers money`, image: `<img src="images/taxes.JPG">` },
+				{ name: `starring in their own reality TV show, Keeping Up With the Royals`, image: `<img src="images/show.JPG">` },
+				{ name: `staging a plan to overthrow the government and establish an absolute monarchy`, image: `<img src="images/government.JPG">` },
+				{ name: `entering the Eurovision Song Contest with their latest single, "What has blood got to do, got to do with it"`, image: `<img src="images/eurovision.JPG">` },
+				{ name: `having another intense discussion over whether English Breakfast or Earl Grey is the superior tea`, image: `<img src="images/tea.JPG">` }			
+			];
+
+			// Generating the random numbers
+			var randomNumberOne = Math.floor(Math.random()*people.length);
+			var randomNumberTwo = Math.floor(Math.random()*morePeople.length);
+			var randomNumberNews = Math.floor(Math.random()*news.length);
+
+			// Defining a variable for the random numbers 
+			var firstPerson = people[randomNumberOne].name;
+			var secondPerson = morePeople[randomNumberTwo].name;
+			var latestNews = news[randomNumberNews].name;
+
+			// Function to concatenate the variables
+			document.write("<h1>BREAKING NEWS!</h1><strong>" + firstPerson + "</strong> and <strong>" + secondPerson + "</strong> are <h2><strong>" + latestNews + "!	</strong></h2><br><br>");
+			document.write(people[randomNumberOne].image + morePeople[randomNumberTwo].image + news[randomNumberNews].image)
+		
+		</script>
+	</head>
+	<body>
+		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
+	</body>
+</html>

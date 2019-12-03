@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div class="featured-image-banner" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
-	<section class="hero-container-blog"></section><!-- No text in banner yet-->
-</div>
+<section class="hero-blog-post" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+	<section class=""></section><!-- No text in banner yet-->
+</section>
 
-<div class="blog-container">
-	<h2 class="">{{ page.post-title }}</h2>
-	<p class="post-meta-post">{{ page.date | date: '%B %d, %Y' }} | {{ page.author }} | {{ page.category }}</p>
+<section class="content-container-post">
+	<h4 class="">{{ page.post-title }}</h4>
+	<h5 class="post-meta">{{ page.date | date: '%B %d, %Y' }} | {{ page.author }} | {{ page.category }}</h5>
 	<p>{{ content }}</p>
-</div>
+</section>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<section class="hero-travel-country" {% if page.featured-img %} style="background-image: url('{{ page.featured-img }}');" {% endif %}>
+	<div class="hero-container-standard darken">
+		<h1>{{ page.featured-country }}</h1>
+	</div>
+</section>
+
+<!-- <section class="travel-image-container">
+	<div class="travel-image-1" {% if page.featured-img %} style="background-image: url('{{ page.featured-img-1 }}');" {% endif %}><a href="#"><h2 class="">INSPIRATION.</h2></a></div>
+    <div class="travel-image-2" {% if page.featured-img %} style="background-image: url('{{ page.featured-img-2 }}');" {% endif %}><a href="#"><h2 class="">EXPLORE.</h2></a></div>
+    <div class="travel-image-3" {% if page.featured-img %} style="background-image: url('{{ page.featured-img-3 }}');" {% endif %}><a href="#"><h2 class="">EAT.</h2></a></div>
+</section> -->
+
+{{ content }}
+
+
+

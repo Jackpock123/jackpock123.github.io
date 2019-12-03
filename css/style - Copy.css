@@ -1,0 +1,777 @@
+/*GENERAL STYLES*/
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+	font-family: serif;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	background: #ffffff;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover {
+	color: grey;
+}
+
+.bottom-line {
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
+/*** DEFAULT HEADER AND FOOTER AND MAILCHIMP FORM STYLES ***/
+
+header,
+footer {
+	margin: 5px auto;
+	max-width: 920px;
+	background: transparent;
+	color: #ffffff;	
+}
+
+.main-nav, .footer-nav  {
+	display: flex;
+	overflow: hidden;
+}
+
+.nav-about {
+	margin-left: auto;
+}
+
+.footer-nav {
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav.main-nav li, .footer-nav li {
+	padding: 0 5px;
+	font-size: 1.1rem;
+}
+
+nav.main-nav li:first-child, nav.footer-nav li:first-child {
+    padding-left: 0;
+}
+
+nav.main-nav li:last-child, nav.footer-nav li:last-child {
+    padding-right: 0;
+}
+
+header a {
+	color: black;
+}
+
+footer a {
+	color: grey;
+}
+
+
+/*STYLES FOR MOBILE HEADER*/
+.main-nav .icon {
+	display: none;
+}
+
+
+/*HOMEPAGE STYLES*/
+
+.hero {
+    grid-area: h;
+}
+
+.title-banner {
+	grid-area: t;
+}
+
+.about {
+    grid-area: a;
+}
+
+.home-image-1 {
+	background-image: url('/images/bund.jpg');
+    grid-area: i1;
+}
+
+.home-image-2 {
+	background-image: url('/images/laplaya-2.JPG');
+    grid-area: i2;
+}
+
+.home-image-3 {
+	background-image: url('/images/dj-2.jpg');
+    grid-area: i3;
+}
+
+.image-blog-1 {
+    grid-area: i4;
+}
+
+.image-blog-2 {
+    grid-area: i5;
+}
+
+.image-blog-3 {
+    grid-area: i6;
+}
+
+.blog-extract-1 {
+    grid-area: b1;
+}
+
+.blog-extract-2 {
+    grid-area: b2;
+}
+
+.blog-extract-3 {
+    grid-area: b3;
+}
+
+.main-container {
+    height: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0;
+    background: white;
+
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px 200px 200px auto 200px auto 200px auto 200px auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1"
+    "i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2"
+    "i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i4 i4 i4 i4 i4 i4 i4 i4"
+    "b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1"
+    "i5 i5 i5 i5 i5 i5 i5 i5 i5 i5 i5 i5"
+    "b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2"
+    "i6 i6 i6 i6 i6 i6 i6 i6 i6 i6 i6 i6"
+    "b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3";
+}
+
+
+
+
+
+
+
+
+
+
+/*Carousel styles*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
+
+.my-slides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: pink;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+.dot-button {
+  text-align: center;
+}
+
+.caption-text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.number-text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 3s ease;
+} 
+
+.active, .dot:hover {
+  background-color: pink;
+}
+
+/*CSS Animation*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.1)
+    ), url('/images/bird.JPG');
+	background-size: cover;
+	background-position: bottom center;
+	text-align: center;
+
+	/*position: relative;*/
+}
+
+.home-hero-container {
+	max-width: 400px;
+}
+
+.home-hero-container h1 {
+	margin-bottom: 3px;
+	font-size: 3rem;
+	font-weight: 500;
+}
+
+.home-hero-container h3 {
+	margin-bottom: 10px	;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+.home-hero-container h4 {
+	font-size: 0.9rem;
+	font-weight: 500;
+}
+
+.home-image-1, .home-image-2, .home-image-3, .image-blog-1, .image-blog-2, .image-blog-3, 
+.travel-image-1, .travel-image-2, .travel-image-3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-size: cover;
+	background-position: 0 25%;
+}
+
+.home-image-1 h2, .home-image-2 h2, .home-image-3 h2, .travel-image-1 h2, .travel-image-2 h2, .travel-image-3 h2  {
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.title-banner {
+	text-align: center;
+}
+
+.title-banner h2 {
+	font-size: 1.3rem;
+	font-weight: 500;
+}
+
+.image-blog-1, .image-blog-2, .image-blog-3 {
+	margin: 0 0 -20px 0;
+}
+
+.blog-extract-1, .blog-extract-2, .blog-extract-3 {
+	padding: 20px;
+	background-color: lightgrey;
+	color: black;
+	text-align: justify;
+}
+
+h4.blog-extract-title {
+	margin-bottom: 3px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+h5.post-meta {
+	font-size: 0.7rem;
+	color: grey;
+	margin: 0 0 5px 0;
+}
+
+h6.post-excerpt {
+	font-size: 0.9rem;
+	font-style: oblique;
+}
+
+
+/*GENERAL STYLES FOR SUBPAGES*/ 
+
+.hero-about, .hero-travel, .hero-music, .hero-blog-home, .hero-blog-post, .hero-fc,
+.hero-travel-colombia, .hero-travel-country {
+	max-width: 920px;
+	height: 300px;
+	margin: 0 auto;
+	padding: 0;	
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;	
+}
+
+.hero-container-standard h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+.content-container-standard {
+	margin: 0 auto;
+	padding: 20px;
+	max-width: 450px;
+	text-align: center;
+}
+
+.content-container-standard h3 {
+	margin-bottom: 20px	;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content-container-standard p {
+	margin: 15px 0;
+	text-align: justify;
+	line-height: 1.2rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+
+/*ABOUT STYLES*/
+
+.hero-about {
+	background-image: url('/images/hucca.JPG');
+	background-size: cover;
+	background-position: 0 48%;	
+}
+
+/*TRAVEL HOME STYLES*/
+.hero-travel {
+	background-image: url('/images/surf.JPG');
+	background-size: cover;
+	background-position: 0 40%;
+}
+
+.travel-image-container {
+	margin: 10px auto;	
+	max-width: 920px;
+	display: grid;
+	grid-gap: 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.travel-image-1 {
+	background-image: url('/images/bund.jpg');
+}
+
+.travel-image-2 {
+	background-image: url('/images/laplaya-2.JPG');
+}
+
+.travel-image-3 {
+	background-image: url('/images/dj-2.jpg');
+}
+
+.profile {
+	border-radius: 50%;
+}
+
+.hero-travel-country {
+	background-size: cover;
+	background-position: 0 40%;
+}
+
+
+.travel-image-grid {
+	margin: 0 auto;
+	max-width: 920px;
+	display: grid;
+	grid-gap: 3px;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: 150px;
+	grid-auto-flow: dense;
+}
+
+.grid-horizontal-image {
+    grid-column: span 2;
+}
+
+.grid-vertical-image {
+    grid-row: span 2;
+}
+
+.grid-big-image {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.travel-image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/*MUSIC STYLES*/
+.hero-music {
+	background-image: url('/images/fritz.JPG');
+	background-size: cover;
+	background-position: 0 50%;	
+}
+.music-content {
+	text-align: left;
+}
+
+
+/*F&C STYLES*/
+.hero-fc {
+	background-image: url('/images/citadel.JPG');
+	background-size: cover;
+	background-position: 0 40%;	
+}
+
+.content-container-fc {
+	margin: 10px auto;
+	max-width: 920px;
+	text-align: center;
+}
+
+.content-container-fc h3 {
+	margin-bottom: 20px	;
+	font-size: 1.3rem;
+	font-weight: 500;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.content-container-fc h4 {
+	margin-bottom: 10px;
+	font-size: 1.1rem;
+
+}
+
+/*This is a bit hacky to get the bullet inside the container*/
+ul.content-list  {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.content-list li {
+	list-style: circle;
+	margin-bottom: 5px;
+	font-size: 1.1rem;
+}
+
+.fc-image {
+	max-width: inherit;
+	margin: 20px 0;
+	height: 200px;	
+	background-attachment: fixed;
+	background-position: bottom top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.fc-image {
+	background-image: url('/images/site-photo.JPG');
+}
+
+.content-image {
+    margin: 0 0 15px 0;
+}
+
+.content-image img {
+    width: 100%;
+}
+
+
+/*Full page tab styles https://www.w3schools.com/howto/howto_js_full_page_tabs.asp*/
+
+.tab-links {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+button.tablink {
+	display: flex;
+	justify-content: center;
+	flex: 1 1 60px;
+	background-color: #555;
+	color: white;
+
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 10px 16px;
+	font-size: 1.1rem;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+.tabcontent {
+	color: black;
+	display: none;
+	text-align: justify;
+}
+
+#tab-content-1 {
+	background-color: white;
+}
+#tab-content-2 {
+	background-color: white;
+}
+#tab-content-3 {
+	background-color: white;
+}
+#tab-content-4 {
+	background-color: white;
+}
+
+
+/*BLOG HOME STYLES*/
+.hero-blog-home {
+	background-image: url('/images/tajamulco.JPG');
+	background-size: cover;
+	background-position: 0 60%;
+}
+
+.blog-home-excrept {
+	text-align: left;
+}
+
+.blog-home-excrept h4, .content-container-post h4 {
+	text-align: left;
+	margin-bottom: 3px;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.blog-home-excrept p {
+	font-size: 1rem;
+}
+
+/*BLOG POST STYLES*/
+
+.hero-blog-post {
+	background-size: cover;
+	background-position: 0 60%;
+}
+
+.content-container-post {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 450px;
+	text-align: left;
+}
+
+.content-container-post p {
+	text-align: justify;
+	line-height: ;
+	font-size: 1.1rem;
+	font-weight: 500;
+}
+
+
+
+/*MEDIA QUERIES*/
+/*Media query for mobile navigation header*/
+@media only screen and (max-width: 600px) {
+	.main-nav li:not(:first-child) {
+		display: none;
+	}
+
+	.main-nav .icon {
+		display: block;
+		margin-left: auto;
+		float: right;
+
+	}
+
+	.responsive {
+		display: block;
+		background-color: lightgrey;
+	}
+
+
+	.responsive a {
+		float: none;
+		display: block;
+		text-align: left;
+
+	}
+
+	.responsive li:not(:first-child) {
+		float: none;
+		display: block;
+		text-align: left;
+		display: block;
+	}
+
+	.responsive li {
+		margin: 5px 0;
+		padding: 0 5px;
+	}
+
+	.responsive .icon {
+		display: block;
+		position: absolute;
+		right: 0px;
+		top: 5px;	
+	}
+
+
+}
+
+
+/*Media query for 1200px > x > 600px*/ 
+@media only screen and (min-width: 600px) {
+
+	.image-blog-3, .blog-extract-3 {
+		display: none;
+	}
+
+	.main-container {
+    grid-gap: 20px; /*** NOTE THE HACK WITH THE IMAGE-BLOG MARGINS TO REDUCE TO GRID GAP WITH BLOG PREVIEW  ***/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px auto 200px auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i2 i2 i2 i2 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i4 i4 i5 i5 i5 i5 i5 i5"
+    "b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2 b2";
+	}
+
+	.travel-image-container {
+	margin: 20px auto;	
+	max-width: 920px;
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+}
+
+}
+
+
+/*Media query for 1200px < x*/
+@media only screen and (min-width: 1100px) {
+
+	.image-blog-3, .blog-extract-3 {
+		display: inherit;
+	}
+
+	.main-container {
+    grid-gap: 20px; /*** NOTE THE HACK WITH THE IMAGE-BLOG MARGINS TO REDUCE TO GRID GAP WITH BLOG PREVIEW  ***/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px 200px auto 200px auto auto;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+    "i1 i1 i1 i1 i2 i2 i2 i2 i3 i3 i3 i3"
+    "t t t t t t t t t t t t"
+    "i4 i4 i4 i4 i5 i5 i5 i5 i6 i6 i6 i6"
+    "b1 b1 b1 b1 b2 b2 b2 b2 b3 b3 b3 b3";
+	}
+}
+
+
+
+
+
+
+
+
+
+

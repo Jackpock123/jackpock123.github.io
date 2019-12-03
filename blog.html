@@ -1,26 +1,28 @@
 ---
 layout: default
-title: Blog
+title: Blog Homepage
 ---
 
-<div class="hero-blog-home">
-	<section class="hero-container-blog">
-		<h2>THOUGHTS.</h2>
-	</section>
-</div>
+<section class="hero-blog-home">
+	<div class="hero-container-standard darken">
+		<h1>THOUGHTS.</h1>
+	</div>
+</section>
 
-<div class="posts-container">
+<section class="content-container-standard">
+	<div class="blog-home-content">
+		<h3 class="text-underline">Latest from the blog.</h3>
 
-	<h3 class="text-underline">Latest from the blog</h3>
-	{% for post in site.posts %}
-		<div class="post-wrapper">
-			<h3><a href="{{ post.url }}">{{ post.post-title }}</a></h3>
-			<p class="post-meta">{{ post.date | date: '%B %d, %Y' }} | {{ post.author }} | {{ post.category }}</p>
-			<p>{{ post.excerpt }}</p>
-		</div>
+		{% for post in site.posts %}
+			<div class="blog-home-excrept">
+				<h4><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
+				<h5 class="post-meta">{{ post.date | date: '%B %d, %Y' }} | {{ post.author }} | {{ post.category }}</h5>
+				<h6 class="post-excerpt">{{ post.excerpt }}</h6>
+			</div>
 
-		<hr class="bottom-line">
-	{% endfor %}
+			<hr class="bottom-line">
+		{% endfor %}
+	</div>
 
-</div>
+</section>
 

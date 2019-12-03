@@ -1,24 +1,67 @@
 ---
 layout: default
-title: Home
+title: Joe Jackson Homepage
 ---
 
+<div class="main-container">    
 
-<div class="main-container">
-    <div class="hero">
-    	<section class="hero-container">
-    		<h1>Welcome.</strong></h1>
-            <h4>Exploration | Creativity | Health</h4>
-            <p class="hero-tagline">"A space to ponder over the experiences which combine, collide and coexist together to shape our little journey called life"</p>
-    	</section>
-	</div>
+    <div class="hero home-hero-text ">        
 
-    <div class="image-1"><a href="/about.html"><h2>ABOUT.</h2></a></div>
-    <div class="image-2"><a href="/travel.html"><h2>TRAVEL.</h2></a></div>
-    <div class="image-3"><a href="/music.html"><h2>MUSIC.</h2></a></div>
+        <div class="prev">
+            <a href="#"  onclick="plusSlides(-1)">&#10094</a>
+        </div>
 
+        <div class="home-hero-container">
+            
+            <h1 class="hero-welcome darken">Welcome.</h1>
+            <h3 class="hero-tags darken">Explore | Create | Grow</h3>
+            <h4 class="hero-tagline darken italic">"Really its just a space to doodle"</h4>
+                        
+        </div>        
+
+        <div class="next">
+            <a href="#" onclick="plusSlides(1)">&#10095</a>
+        </div>             
+        
+    </div>
+
+
+    <div class="hero home-hero-button">
+
+        <div>
+            <span class="js-dot dot" onclick="currentSlide(1)"></span>
+            <span class="js-dot dot" onclick="currentSlide(2)"></span>
+            <span class="js-dot dot" onclick="currentSlide(3)"></span>
+        </div>            
+        
+    </div>
+
+
+    <div class="hero home-hero-1 fade js-mySlides">      
+
+        <div class="number-text"></div>
+        <div class="caption-text"></div>   
+
+    </div>
+
+    <div class="hero home-hero-2 fade js-mySlides">
+        <div class="number-text"></div>
+        <div class="caption-text"></div> 
+    </div>
+
+    <div class="hero home-hero-3 fade js-mySlides">
+        <div class="number-text"></div>
+        <div class="caption-text"></div>
+    </div>
+
+    
+    <div class="home-image-1"><a href="/about.html" class="darken"><h2 class="image-link">ABOUT.</h2></a></div>
+    <div class="home-image-2"><a href="/travel.html" class="darken"><h2 class="image-link">TRAVEL.</h2></a></div>
+    <div class="home-image-3"><a href="/music.html" class="darken"><h2 class="image-link">MUSIC.</h2></a></div>
+    
+   
     <div class="title-banner">
-        <h3><a href="/blog.html">THOUGHTS FROM THE BLOG</a></h3>
+        <a href="/blog.html"><h2 class="title-banner-blog">THOUGHTS FROM THE BLOG.</h2></a>
     </div>
 
 
@@ -34,12 +77,14 @@ title: Home
     {% for post in site.posts %}
     {% if forloop.index == 1 %}
         <div class="post-wrapper-home">
-            <h4><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <p class="post-meta">
+            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
+            <h5 class="post-meta">
                 {{ post.date | date: '%B %d, %Y' }} | 
                 {{ post.category }}
-            </p>
-            <p class="post-excerpt">{{ post.excerpt | truncatewords: 20 }}</p>
+            </h5>
+            <h6 class="post-excerpt">
+            {{ post.excerpt | truncatewords: 20 }}
+            </h6>
         </div>
     {% endif %}
     {% endfor %}
@@ -55,12 +100,14 @@ title: Home
     {% for post in site.posts %}
     {% if forloop.index == 2 %}
         <div class="post-wrapper-home">
-            <h4><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <p class="post-meta">
+            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
+            <h5 class="post-meta">
                 {{ post.date | date: '%B %d, %Y' }} | 
                 {{ post.category }}
-            </p>
-            <p class="post-excerpt">{{ post.excerpt | truncatewords: 20 }}</p>
+            </h5>
+            <h6 class="post-excerpt">
+            {{ post.excerpt | truncatewords: 20 }}
+            </h6>
         </div>
     {% endif %}
 
@@ -77,20 +124,22 @@ title: Home
     {% for post in site.posts %}
     {% if forloop.index == 3 %}
         <div class="post-wrapper-home">
-            <h4><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <p class="post-meta">
+            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
+            <h5 class="post-meta">
                 {{ post.date | date: '%B %d, %Y' }} | 
                 {{ post.category }}
-            </p>
-            <p class="oblique"> <!-- cannot get the excerpt to be italic using a class or filter -->
+            </h5>
+            <h6 class="post-excerpt">
             {{ post.excerpt | truncatewords: 20 }}
-            </p>
+            </h6>
         </div>
 
     {% endif %}
     {% endfor %}       
     </div><!-- #blog-extract-3 -->
 </div>
+
+<script src="js/carousel.js"></script>
 
 
 
