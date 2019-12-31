@@ -1,0 +1,130 @@
+/*
+ * General Styles
+*/
+
+
+body {
+  background: url('../images/vintage-leaves.png');
+  font-family: 'Open Sans', arial, sans-serif;
+
+  /* Full Page Background Receipe */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+p.timings {
+  font-style: italic;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/*
+ * Heading Styles
+*/
+
+
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+  color: darkgreen;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/*
+ * Container Styles
+*/
+.container {
+  width: 600px;
+  margin: 50px auto;
+}
+
+
+
+/*
+ * Hero Styles
+*/
+
+.hero img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.hero {
+  line-height: 0;
+}
+
+
+/*
+ * Section Styles
+*/
+
+section.intro, section.timings, section.location {
+  padding: 20px;
+}
+
+section.intro {
+  background: lightgrey;
+}
+
+section.timings {
+  background: rgba(236,219,210,1);
+}
+
+section.location {
+  background: lightgrey;
+}
+
+
+/*
+ * Aside Styles
+*/
+
+aside.right {
+  float: right;
+}
+
+aside {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  text-align: center
+}
+
+
+
+
+
+
+
+
+
+
+
