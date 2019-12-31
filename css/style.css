@@ -66,6 +66,16 @@ a:hover {
 	background-image: linear-gradient(rgba(255,140,0, 0.9), rgba(255,140,0, 0.9));	
 }
 
+.fa-play, .fa-pause	 {
+	cursor: pointer;
+	font-size: 0.5rem !important;
+	margin-top: 10px;
+	padding: 5px;
+}
+
+.js-play {
+	display: none;
+}
 
 /*** DEFAULT HEADER AND FOOTER AND MAILCHIMP FORM STYLES ***/
 
@@ -217,13 +227,13 @@ footer a {
 }
 
 .home-hero-2 {
-	background-image: /*linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),*/ url('/images/wall.JPG');
+	background-image: url('/images/wall.JPG');
 	background-position: center center;
 
 }
 
 .home-hero-3 {
-	background-image: /*linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),*/ url('/images/fritz.JPG');
+	background-image: url('/images/fritz.JPG');
 	background-position: 50% center;
 }
 
@@ -255,6 +265,8 @@ footer a {
 	font-size: 0.9rem;
 	font-weight: 500;
 }
+
+/*HOMEPAGE CAROUSEL STYLES*/
 
 .home-hero-button {
 	justify-content: center;
@@ -409,6 +421,13 @@ h6.post-excerpt {
 	text-align: center;
 }
 
+.content-container-standard h6 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1rem;
+	color: grey;
+}
+
 .content-container-standard p {
 	margin: 15px 0;
 	text-align: justify;
@@ -416,6 +435,15 @@ h6.post-excerpt {
 	font-size: 1.1rem;
 	font-weight: 500;
 }
+
+.content-container-standard img {
+	width: 100%;
+}
+
+.content-container-standard a:hover {
+	color: orange;
+}
+
 
 
 /*ABOUT STYLES*/
@@ -525,6 +553,20 @@ h6.post-excerpt {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*MUSIC STYLES*/
 .hero-music {
 	background-image: url('/images/fritz.JPG');
@@ -558,7 +600,7 @@ h6.post-excerpt {
 }
 
 .content-container-fc h4 {
-	margin-bottom: 10px;
+	margin: 30px 0 0 0;
 	font-size: 1.1rem;
 }
 
@@ -573,7 +615,7 @@ h6.post-excerpt {
 	color: orange;
 }
 
-/*This is a bit hacky to get the bullet inside the container*/
+/*This feels a bit hacky to get the bullet inside the container*/
 ul.content-list  {
 	margin-left: 20px;
 	margin-bottom: 20px;
@@ -608,6 +650,15 @@ ul.content-list  {
     width: 100%;
 }
 
+.content-image-collapsible {
+    text-align: center;    
+}
+
+
+.content-image-collapsible img {
+    width: 100%;
+    padding: 10px 15px 0 15px;    
+}
 
 /*Full page tab styles https://www.w3schools.com/howto/howto_js_full_page_tabs.asp*/
 
