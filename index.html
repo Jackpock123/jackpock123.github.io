@@ -1,145 +1,552 @@
----
+--- 
 layout: default
-title: Joe Jackson Homepage
+title: Founders & Coders Application
 ---
 
-<div class="main-container">    
 
-    <div class="hero home-hero-text ">        
+<section class="hero-fc">
+    <div class="hero-container-standard darker">
+        <h1>Founders & Coders Application.</h1>
+    </div>
+</section>
 
-        <div class="prev">
-            <a href="#"  onclick="plusSlides(-1)">&#10094</a>
-        </div>
+<section class="content-container-fc">
 
-        <div class="home-hero-container">
-            
-            <h1 class="hero-welcome darken">Welcome.</h1>
-            <h3 class="hero-tags darken">Explore | Create | Grow</h3>
-            <h4 class="hero-tagline darken italic">"Really its just a space to doodle"</h4>
-                        
-        </div>        
-
-        <div class="next">
-            <a href="#" onclick="plusSlides(1)">&#10095</a>
-        </div>             
-        
+    <div class="tab-links">
+        <button type="button" class="tablink tablink-1-js" id="default-open">INTRO.</button>
+        <button type="button" class="tablink tablink-2-js">CODING.</button>
+        <button type="button" class="tablink tablink-3-js">STORY.</button>
+        <button type="button" class="tablink tablink-4-js">INTERESTS.</button>
     </div>
 
+    <div class="content-container-standard">
+        <div id="tab-content-1" class="tabcontent">
+            <h3 class="">Introduction</h3>
+            <p>Please find the prerequisites listed below.</p>
 
-    <div class="hero home-hero-button">
+            <ul class="content-list">
+                <li><a href="https://github.com/Jackpock123" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://www.freecodecamp.org/jackpockalipse" target="_blank">freeCodeCamp Profile</a></li>
+                <li><a href="https://www.codewars.com/users/jackpockninja" target="_blank">Codewars Profile</a></li>
+                <li><a href="/home.html">Image Carousel</a></li>
+                <li><a href="/FAC/certificates.html" target="">Coding Bootcamp Certificates</a></li>
+            </ul>
 
-        <div>
-            <span class="js-dot dot" onclick="currentSlide(1)"></span>
-            <span class="js-dot dot" onclick="currentSlide(2)"></span>
-            <span class="js-dot dot" onclick="currentSlide(3)"></span>
-        </div>            
-        
+            <p>Hey thank you for stopping by! Below you'll find a little summary about myself and why I'd love to join the FAC team.</p> 
+
+            <p>If you'd like to know more details about my coding background, professional experience or interests please click the tabs above or feel free to explore my<a href="/home.html" target="_blank"> Personal Website</a> (it's responsive yayy) and<a href="/about.html" target="_blank"> About Me</a> section which are seperate from the application.</p>
+
+
+
+
+            <div class="collapsible-set">
+                <button type="button" class="collapsible-button">Nice to meet you!</button>
+                <div class="collapsible-button-content">
+                    <p>Hey I'm Joe, a professionally qualified Civil Engineer that is passionate about learning how to write beautiful code and designing and delivering things that make the world a better place!</p> 
+
+                    <p>After working 4.5 years in the Middle East on complex<a href="https://corp.qr.com.qa/English/Projects/Pages/DohaMetro.aspx" target="_blank"> metro projects,</a>  my coding journey started in March 2017 with<a href="https://onemonth.com/courses" target="_blank"> OneMonth.</a></p>
+
+                    <p>Since then I've developed Front End experience, completing OneMonth's<a href="https://onemonth.com/courses/html" target="_blank"> HTML & CSS Bootcamp,</a><a href="https://onemonth.com/courses/javascript" target="_blank"> JavaScript Bootcamp</a> and<a href="https://onemonth.com/courses/responsive-design" target="_blank"> Responsive Design</a> online course and used<a href="/home.html" target="_blank"> this website</a> to put into practice the skills I've learnt.</p>
+
+                    <p>Having spent 2019 studying Spanish in Madrid and Colombia, I recently returned to the UK to submit my application for FAC's Spring Cohort 2020 and take a big step towards a career in web development (can you tell I'm very excited!?)</p>
+
+                    <div class="content-image-collapsible">
+                        <img  src="/images/fnc/my-precious.jpg" alt="Passport photo">
+                    </div>
+                    <h6 class="caption">Me on a good day preciousss</h6>
+                </div>
+
+                <button type="button" class="collapsible-button">Why Coding?</button>
+                <div class="collapsible-button-content">
+                    <p>Firstly I like building things :)</p>
+
+                    <p>Having worked and trained as an Civil Engineer for 9 years; problem solving, product design and project delivery are a big part of my DNA.</p>
+
+                    <p>I love the way coding presents an almost infinite number of ways to solve a problem and like engineering it is delivering a technical product or service which is fit for purpose and has the end user's experience in mind.</p>
+
+                    <p>However, unlike in construction the tech industry can employ a MVP focused design approach, getting a product out there for feedback, iterating and moving quickly. This is something that excites me and the prospect of working in an agile environment is hugely appealing.</p>
+
+                    <p>Building my website has given me a freedom to express myself. I really enjoy the combination of creativity and logic and the modular style of learning, adding on and developing new skills depending on what you want to build.</p>
+
+                    <p>Secondly, as an Engineer I also saw lots of opportunity in programming.</p>
+
+                    <p>During my career in the Middle East there was so many tools that were crying out to be improved. Silly administrative tasks ate up hours of time and let's not talk about the tools we used to track project and contractual performance... I saw some things in Excel that should never be seen again (scarred for life...)</p>
+
+                    <div class="content-image-collapsible">
+                        <img  src="/images/fnc/unicorn.gif" alt="Riding unicorns whilst coding">
+                    </div>
+                    <h6 class="caption">An Engineer after creating his lastest Excel baby which is obviously the best thing since sliced bread</h6>
+
+                    <p class="italic">P.S I found this GIF with my<a href="/portfolio/giphy-search/index.html" target="_blank"> Giphy App</a>  which you can check out<a href="/portfolio/giphy-search/index.html" target="_blank"> here.</a></p>
+
+                    <p>Quite often it seemed like a skills or knowledge gap left us using outdated tools and it got me thinking what skills could I learn that would make a difference.</p>                    
+
+                </div>
+
+
+                <button type="button" class="collapsible-button">Why Founders & Coders?</button>
+                <div class="collapsible-button-content">
+                    <p>Project based learning is a huge draw for me. I love the practicality of it and I feel like this style of learning has helped me progress massively, not only with my coding but also in other areas of my life such as learning Spanish.</p>
+
+                    <p>OneMonth's courses were project focused, requiring me to build something each week for grading. It was this practical application which really reinforced my learning and allowed me to see the bigger picture of why I was using something.</p>
+
+                    <p>I built some cool stuff during the JavaScript Bootcamp which you can check out in the coding tab above.</p>
+
+                    <div class="content-image-collapsible">
+                        <img  src="/images/fnc/soundcloud-app.PNG" alt="SoundCloud application to create playlists">
+                    </div>
+                    <h6 class="caption">SoundCloud create you own playlist App</h6> 
+
+                    <p>I'm also drawn to the FAC ethos and culture. Since my first meetup I felt at home in an environment where everyone works together to improve. It was really rewarding partnering up to solve Kata and showed me the potential of peer-based learning when you place people with different skill sets and backgrounds together.</p>
+
+                    <p>And of course it is really inspiring to see past alumni include people like the co-founder of Scrimba.</p>
+
+                    <p>I'm serious about a career in web development so prospective employability is of huge importance to me. It appears as though employers value FAC graduates and it is cool that finding work after the 12 weeks is beneficial to both FAC and the students, aligning everyone towards a similar goal.</p>
+                </div>
+
+                <button type="button" class="collapsible-button">What have I learnt from the prerequisites?</button>
+                <div class="collapsible-button-content">
+
+                    <p>The process of designing and building this application into my website has been awesome and I learnt a lot adding in some Vanilla JavaScript to build collapsible buttons, a tab display, responsive navigation bar and<a href="/home.html" target="_blank"> image carousel.</a></p>
+
+                    <p>My design approach was to make the most out of the single webpage requested from us in the application and reveal information gradually by using buttons with click events, (hopefully) preventing information overload for my audience.</p>
+
+                    <p>Although not required, enrolling in the OneMonth Javacript Bootcamp in August 2019 really boosted my understanding of what JavaScript can do using AJAX calls to APIs and helped provide some context to what I'd learnt on freeCodeCamp.</p>
+
+                    <p>It also contrasted nicey with the learning objectives of Codewars, where I found the challenges centered around using specific technical skills to solve problems with different data types.</p>
+
+                    <p>Solving Kata brings a real sense of accomplishment and it was so fufilling when done in a team during the pairing sessions.</p>
+
+                    <div class="content-image-collapsible">
+                        <img  src="/images/fnc/smug-face.gif" alt="The feeling after solving kata on codewars">
+                    </div>
+                    <h6 class="caption">How I feel after solving Kata</h6>
+
+                    <p>I found the Training JS and Coding Meetup series by myjinxin2015 and PiotrBerebecki very useful for learning fundamental but yet powerful JS methods such as map(), filter(), reduce() and split() and using E6 features such as arrow functions.</p>
+
+                    <p>Overall, although not typical learning takeway, one of my favourite parts of completing the prerequisites has been attending the meetups and meeting fellow applicants, mentors and course coordinators all hungry to improve and help eachother. There's a great energy in Space4 and I would love to base myself there with the FAC family come March 2020.</p>
+
+                </div>
+
+                <button type="button" class="collapsible-button">Why me?</button>
+                <div class="collapsible-button-content">                
+
+                <div class="content-image-collapsible">
+                        <img  src="/images/fnc/i-know-word.gif" alt="I know word">
+                </div>
+                <h6 class="caption">Is Google Docs ok?</h6>
+
+                <p>Elevator pitch incoming!</p>                
+
+                <p>Since starting out with programming it's become more apparent to me that my experience in technical design and project delivery helps to provide a strong foundation to launch a career in coding.</p>
+
+                <p>Working to high technical standards and following strict quality assurance processes was a fundamental part of my previous role and I'd like to think I'd thrive in a multidisciplinary tech environment.</p>
+
+                <p>I've learnt so much already this year just by applying to the course and I'm hungry and excited to contribute positively as part of the FAC family, working to deliver progressive social projects on behalf of Tech for Better and FAC affiliated companies.</p>
+
+                <p>Uncertainty is something I actively seek out and this has led to working in diverse teams accross the Middle East and Northwest China.</p>
+
+                <p>Although it's uncertain where my coding career will end up, I'm really hoping it will start with you guys!</p>
+
+                <div class="content-image-collapsible">
+                        <img  src="/images/fnc/cheesy.gif" alt="We all love a love story">
+                </div>
+                <h6 class="caption">Who doesn't love a cheesy story? :)</h6>
+
+                </div>
+                
+            </div>
+
+
+
+
+
+            <!-- <p>Why Founders & Coders?</p> -->
+
+            <ul class="content-list">
+                <!-- <li>Community and helping others: social projects</li>
+                <li>Project based just like OneMonth, suits my learning style. A natural problem solver.</li>
+                <li>Involvement in tech in Atkins?</li>
+                <li>Image Carousel</li>
+                <li>Coding Bootcamp Certificates</li> -->
+            </ul>
+
+        </div><!-- tab-content-1 -->
+
+
+
+
+
+
+
+
+
+
+        <div id="tab-content-2" class="tabcontent">
+            <h3>Programming Experience</h3>
+
+            <p>A summary of my programming journey to date.</p>
+
+            <ul class="content-list">
+                <li><a href="#jump-html">HTML & CSS OneMonth Bootcamp</a></li>
+                <li><a href="#jump-jekyll">Jekyll</a></li>
+                <li><a href="#jump-javascript">JavaScript OneMonth Bootcamp</a></li>
+                <li><a href="#jump-summary">Further Website Development and beyond!</a></li>
+                <li><a href="#jump-projects">List of Projects and Links</a></li>
+            </ul>
+
+            <h4 class="underline" id="jump-html">HTML & CSS Bootcamp</h4>
+            <p>In May 2017 I jumped into coding with the<a href="https://onemonth.com/courses/html" target="_blank"> OneMonth HTML & CSS Bootcamp</a>. I wanted to build my own website without pre-built templates and sensed an opportunity to start my coding journey.</p>
+
+            <p>OneMonth courses use project based learning and I completed four assignments; building static webpages for a<a href="/portfolio/monthly-resolutions/index.html" target="_blank"> Monthly Resolutions blog</a>, my<a href="/portfolio/woodland-wedding/index.html" target="_blank"> mother's wedding</a> and a clone of a Air BnB profile called<a href="/portfolio/aircnc/index-flex.html" target="_blank"> AirCnC</a> for sharing dogs.</p>
+
+            <div class="collapsible-set">
+                <button type="button" class="collapsible-button">OneMonth HTML: Summary</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>HTML & CSS for building simple static webpages</li>
+                        <li>Mobile first and responsive design</li>
+                        <li>Simple webpage layouts, SEO and UX design</li>
+                    </ul>
+                </div>  
+            </div>
+
+            <div class="content-image">
+                <img  src="/images/fnc/wedding-website.PNG" alt="Example webpage for a wedding">
+            </div>
+            <h6 class="caption">Wedding Event Webpage</h6>
+
+
+
+
+
+
+
+
+
+
+            <h4 class="underline" id="jump-jekyll">Jekyll</h4>
+            <p>I realised quickly that if I wanted blogging functionality for my website, having to hardcode every new post would be inefficient and messy when updating the website. I discovered Jekyll, a framework that generates static and blog-aware sites which let me host my website for free on GitHub.</p>
+
+            <p>Jekyll is written in Ruby, and allowed me to build my static website from dynamic components such as templates, liquid code and markdown. I made some basic sketches of the website and using the tutorials from<a href="https://learn.cloudcannon.com/" target="_blank"> cloudcannon</a> and skills from the OneMonth bootcamp started to build my website from scratch.</p>
+
+            <p>During this time, I also learnt how to use Flexbox and CSS Grids on Scrimba (it's very cool that Per was part of FAC in 2015).</p>
+
+            <p>I'm a big fan of Jekyll, and in the process leading up to commiting my first build on GitHub in December 2018 I learnt:</p>
+
+            <div class="collapsible-set">
+                <button type="button" class="collapsible-button">Jekyll: Summary</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>To use liquid to build a blog which automatically updates content dynamically across several pages with each new post</li>
+                        <li>Building and nesting templates for an efficient and functional website</li>
+                        <li>Designing the layout, UX and UI for my own website</li>
+                        <li>CSS Grids and Flexbox</li>  
+                    </ul>
+                </div>  
+            </div>
+
+            <div class="content-image">
+                <img  src="/images/fnc/jekyll-website.PNG" alt="Homepage of personal website first push">
+            </div>
+            <h6 class="caption">Home Page of Personal Website December 2018</h6>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h4 class="underline" id="jump-javascript">JavaScript OneMonth Bootcamp</h4>
+
+            <p>After completing the required JavaScript prerequisites on freeCodeCamp for F&C, I wanted to develop my understanding of JavaScript using a project based approach so in August 2019 I enrolled in the<a href="https://onemonth.com/courses/javascript" target="_blank"> OneMonth JavaScript Bootcamp</a>.</p>
+
+            <p>I built four applications:<a target="_blank" href="portfolio/theroyals-final/index.html"> a Randomizer App,</a><a target="_blank" href="portfolio/giphy-search/index.html"> a Giphy App</a>, <a target="_blank" href="portfolio/soundcloud-player/index.html"> a SoundCloud App</a> and <a target="_blank" href="portfolio/rugbystats/index.html"> a data visualization exercise</a>.</p>
+
+            <div class="collapsible-set">
+                <button type="button" class="collapsible-button">Project 1: Randomizer App</button>
+                <div class="collapsible-button-content">
+
+                    <p><a target="_blank" href="portfolio/theroyals-final/index.html">This Randomizer App</a> that generates breaking news about the Royal Family by randomly selecting and concatenating data from 3 objects. Don't believe everything you read :)</p>
+
+                    <ul class="content-list">
+                        <li>Objects, Manipulating the DOM, variables, concatenate</li>
+                        <li>Math.floor, Math.random, document.write</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">Project 2: Giphy App</button>
+                <div class="collapsible-button-content">
+
+                    <p><a target="_blank" href="portfolio/giphy-search/index.html">This Giphy App</a> uses the search value to make AJAX requests to the giphy.com API and manipulates to DOM to show selected JSON data (the GIFs).</p>
+
+                    <ul class="content-list">
+                        <li>Functions and function scope, AJAX requests, parsing JSON data, build search bar and grab data for API call to giphy.com, passing variables as arguments, forEach loops</li>
+                        <li>element.value, forEach(), element.innerHTML</li>
+                        <li>.querySelector(), .addEventListener('keyup'), JSON.parse</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">Project 3: SoundCloud App</button>
+                <div class="collapsible-button-content">
+                    
+                    <p><a target="_blank" href="portfolio/soundcloud-player/index.html">This SoundCloud App</a> uses the search value to make an API call to SoundCloud and then dynamically creates new divs which show selected information such as track titles and artwork. The user can then add these 'cards' to create their own playlist. The App stores the data locally to save the user's playlist and has a reset button to start over.</p>
+
+                    <ul class="content-list">
+                        <li>Manipulating the DOM to create 'cards' and display search results, build search bar and grab data for API call to soundcloud.com, passing variables as arguments, function scope</li>
+                        <li>.createElement, .classList.add(), .appendChild(), .insertBefore(), localStorage.setItem(), localStorage.getItem(), localStorage.clear, location.reload()</li>
+                        <li>forEach(), .querySelector, .addEventListener, SoundCloudAPI </li>                       
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">Project 4: Rugby Data Visualization</button>
+                <div class="collapsible-button-content">
+
+                    <p><a target="_blank" href="portfolio/rugbystats/index.html">This application</a> displays rugby statistics using Google Charts, a Google Spreadsheet as a database to generate API data and Tabletop.js. This project also included tutorials on how to manipulate data with push, pop shift and reverse arrays and a comparison of the map() and forEach() functions.</p>
+
+                    <ul class="content-list">
+                        <li>Integrate data from Google Spreadsheets using Tabletop.js, displaying data, updating a database</li>
+                        <li>.push(), pop(), shift(), reverse()</li>
+                        <li>map(), forEach()</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">Summary: JavaScript</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>An introduction to 10 key concepts including objects, events, variables, functions, arrays and debugging</li>
+                        <li>Creating a search bar, grabbing data and using it to make an AJAX call to an API (interacting with databases)</li>
+                        <li>Parsing data with JSON and manipulating the DOM to show search results</li>
+                        <li>Function scope</li>
+                        <li>Displaying data using Google Charts and Tabletop.js</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="content-image">
+                <img  src="/images/fnc/soundcloud-app.PNG" alt="SoundCloud application to create playlists">
+            </div>
+            <h6 class="caption">SoundCloud create you own playlist App</h6>
+
+
+
+
+
+
+
+
+
+
+
+
+            <h4 class="underline" id="jump-summary">Building out this website and beyond</h4>
+
+            <p>Using the additional skills in JavaScript and CSS I completely recoded my website to tidy up the code, add extra functionality and content, improve the styling and responsive design and built new sections. Most importantly the FAC one you see here! :)</p>
+
+            <p>I also took the OneMonth Responsive Design Course in October 2019.</p>
+
+            <p>Details of what I've added to this website using Vanilla JavaScript are provided below:</p>
+
+            <div class="collapsible-set">
+                <button type="button" class="collapsible-button">JS: Image Carousel</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>Anonymous functions, passing variables as arguments, if statement, for loop</li>
+                        <li>element.length, className.replace(), element.style.display</li>
+                        <li>getElementsByClassName(), setTimeout()</li>
+                        <li>CSS animation, @keyframes, z-index:</li>
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">JS: Mobile Navigation Dropdown</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>Boolean data values</li>
+                        <li>classList.add(), classList.remove(), className.includes()</li>
+                        <li>querySelector(), .addEventListener()</li>
+                        <li>:nth-child() CSS selector</li>  
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">JS: Dynamic Tab Content</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>Removing JavaScript from HTML code using EventListener, Passing multiple variables as arguments,<span class="italic"> this</span> keyword</li>
+                        <li>element.length, style.display</li>
+                        <li>.getElementById(), .click()</li>    
+                    </ul>
+                </div>
+
+                <button type="button" class="collapsible-button">JS: Collapsible Buttons</button>
+                <div class="collapsible-button-content">
+                    <ul class="content-list">
+                        <li>if and else statement,<span class="italic"> this</span> keyword</li>
+                        <li>classList.toggle(), element.nextElementSibling, style.maxHeight, element.scrollHeight</li>
+                        <li>.addEventListener()</li>
+                        <li>:after psuedo-element CSS selector, CSS transitions</li>    
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <h4 class="underline" id="jump-projects">Projects and links</h4>
+
+            <p>A list of the projects discussed in this section.</p>
+
+            <ul class="content-list">
+                <li><a href="/index.html" target="_blank">Personal Website Project</a></li>
+                <li><a href="/portfolio/monthly-resolutions/index.html" target="_blank">Monthly Resolutions Blog</a></li>
+                <li><a href="/portfolio/woodland-wedding/index.html" target="_blank">Wedding Webpage</a></li>
+                <li><a href="/portfolio/aircnc/index-flex.html" target="_blank">AirCnC Rent-a-dog Webpage</a></li>
+                <li><a target="_blank" href="portfolio/theroyals-final/index.html">Randomizer App for 'Royal' News</a></li>
+                <li><a target="_blank" href="portfolio/giphy-search/index.html">Giphy App</a></li>
+                <li><a target="_blank" href="portfolio/soundcloud-player/index.html">SoundCloud Playlist App</a></li>
+                <li><a target="_blank" href="portfolio/rugbystats/index.html">Data Visualization with Google Charts</a></li>
+            </ul>
+
+
+
+
+
+
+
+        </div><!-- tab-content-2 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="tab-content-3" class="tabcontent">
+            <h3>Background</h3>
+
+            <p>A little background of what I've been up to previously.</p>
+
+            <!-- <ul class="content-list">
+                <li>Civil Engineering</li>
+                <li>Exploration & Travel</li>
+                <li>Spanish</li>
+                <li>Preparing for F&C</li>
+            </ul>
+
+            <h4 class="underline">Civil Engineering</h4>
+            <p>In August 2012 I started my career as a civil engineer in Atkins Dubai based Ground Engineering team and was fortunate to work on some incredible multi-billion dollar projects including<a href="https://corp.qr.com.qa/English/Projects/Pages/DohaMetro.aspx" target="_blank"> Doha Metro</a>,<a href="https://en.wikipedia.org/wiki/Riyadh_Metro" target="_blank"> Riyadh Metro</a> and the <a href="https://en.wikipedia.org/wiki/Dubai_Opera" target="_blank">Dubai Opera House</a>.</p>
+
+            <p>My proudest achievement would be undertaking the Assistant Project Manager role on Doha Metro's Gold Line, being responsible for a budget of over £1.3m and leading a team of over 40 people spread across three design centres in Dubai, Doha and Manila.</p>
+
+            <p>Working in Xi'an for one of China's most prestigious rail design institutes (FSDI) a subsidiary of China Railway Construction Corporation (CRCC) was also a super cool experience.</p>
+
+            <p>In December 2016 after 4.5 years of professional development and a successful professional review I became a chartered member of the Institution of Civil Engineers (<a href="https://en.wikipedia.org/wiki/Chartered_Engineer_(UK)" target="_blank">CEng</a><a href="https://www.ice.org.uk/about-ice" target="_blank"> MICE</a>).</p>
+
+            <div class="content-image">
+                <img  src="/images/site-photo.PNG" alt="">
+            </div>
+
+            <h4 class="underline">Exploration & Travel</h4>
+            <p>In January 2017 I left my role in Dubai and set out to develop other skills which has seen me volunteer in Da Nang, take a music production course in Berlin, backpack through Latin America and take big steps towards being fluent in a second langauge whilst studying Mandarin in Xi'an and Spanish in Madrid and Bucaramanga.</p>
+
+            <div class="fc-image">
+                <img  src="">
+            </div>
+
+            <h4 class="underline">Spanish</h4>
+            <p>For the last two years learning a second language has been my main passion project. Seeing how much opportunity and joy is available through communicating with different cultures has served as a huge source of inspiration and completely revitalized me a person.</p>
+
+            <p>My learning process has been based on immersion, after passing my HSK2 in Mandarin I focused my attention on Spanish and through basing myself in Spain and Colombia am currently practising a B2 level.</p>
+
+            <div class="fc-image">
+                <img  src="">
+            </div>
+
+            <h4 class="underline">Preparing for Founders & Coders</h4>
+            <p>Since July 2019 I have been based out of Bucaramanga, Colombia. My goal has been to continue advancing my Spanish whilst preparing the best possible application for the F&C bootcamp and taking additional courses on OneMonth so that I can add the most value during the course and beyond.</p> -->
+
+        </div><!-- tab-content-3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="tab-content-4" class="tabcontent">
+            <h3>Interests</h3>
+
+            <p>Thoughts on where I would like to take my coding career.</p>
+
+            <!-- <ul class="content-list">
+                <li>Transportation</li>
+                <li>Sustainability & Natural Resources</li>
+                <li>Efficiency</li>
+                <li>Fostering the Creative Industry</li>
+            </ul>
+
+            <h4 class="underline">Transportation</h4>
+            <p>Having had the majority of my professional experience in the transportation sector I have a fascination with how people move from a to b and how mental and physical health is affected by stress factors such a journey duration, traffic and pollution.</p>
+
+            <p>The infrastructure of many of my favourite cities in the world is being pushed to the limit and a believe we have the technology and know how to do better. I would love to combine my coding, technical engineering and project management skills together to work with a team whose vision it is to improve the environmental or social experience of getting from a to b.</p>
+
+            <div class="fc-image">
+                <img  src="">
+            </div>
+
+            <h4 class="underline">Sustainable Development & Natural Resources</h4>
+            <p>With the world population booming the conservation and maintainance of natural resources and their distribution networks are becoming critically important. Historically we have been very wasteful creatures but with the rise of the sharing economy and new monitoring tools we have an exciting opportunity to use what we have more efficiently.</p>
+
+            <p>Better explained with an example? I remember being super excited by<a href="https://pursuit.unimelb.edu.au/features/digital-vineyards/" target="_blank"> this exhibit</a> in Melbourne a few years ago. The crux of the challenge was not the collection of data but building a platform with which the average farmer could understand and make use of it. Now that's a cool project!</p>
+
+            <div class="fc-image">
+                <img  src="">
+            </div>
+
+            <h4 class="underline">Efficiency</h4>
+            <p>During my experience in the construction industry I grew frustrated with how many simple and repeatable tasks were not automated. It wasn't uncommon to spend a day (honestly you could spend a week...) entering data from one file to another or snipping outputs from a software to use in a report.</p>
+
+            <p>Engineers and architects have precious time taken away from areas in which they can make real impact: by innovating and adding value to designs by improving safety, reducing economic and environmental impacts and delivering a product or service which maximises it's potential benefits to society.</p>
+
+            <p>There is so much that can be done with regards to managing contracts, payment mechanisms and using data and this style of wastefulness is not unique to the construction industry.</p>
+
+            <div class="fc-image">
+                <img  src="">
+            </div>
+
+            <h4 class="underline">Creativity</h4>
+            <p>There is so much undiscovered talent out there for everyone to enjoy. Whether you like theatre, live music or dance. People are putting their art out there but if you don't know the right channels it can be difficult to find.</p>
+
+            <p>I'd love to create a network or platform which both empowers people to share their art and helps others to find it.</p> -->
+        </div><!-- tab-content-4 -->
     </div>
 
+    <!-- <hr class="bottom-line"> -->
 
-    <div class="hero home-hero-1 fade js-mySlides">      
+</section>
 
-        <div class="number-text"></div>
-        <div class="caption-text"></div>   
-
-    </div>
-
-    <div class="hero home-hero-2 fade js-mySlides">
-        <div class="number-text"></div>
-        <div class="caption-text"></div> 
-    </div>
-
-    <div class="hero home-hero-3 fade js-mySlides">
-        <div class="number-text"></div>
-        <div class="caption-text"></div>
-    </div>
-
-    
-    <div class="home-image-1"><a href="/about.html" class="darken"><h2 class="image-link">ABOUT.</h2></a></div>
-    <div class="home-image-2"><a href="/travel.html" class="darken"><h2 class="image-link">TRAVEL.</h2></a></div>
-    <div class="home-image-3"><a href="/music.html" class="darken"><h2 class="image-link">MUSIC.</h2></a></div>
-    
-   
-    <div class="title-banner">
-        <a href="/blog.html"><h2 class="title-banner-blog">THOUGHTS FROM THE BLOG.</h2></a>
-    </div>
-
-
-
-    {% for post in site.posts %}
-    {% if forloop.index == 1 %}
-           <a href="{{ post.url }}" class="image-blog-1" {% if post.featured-img %} style="background-image: url({{ post.featured-img }});" {% else %} style="background-image: url('/images/bubble.png');" {% endif %}></a>
-    {% endif %}
-    {% endfor %}
-
-
-    <div class="blog-extract-1">
-    {% for post in site.posts %}
-    {% if forloop.index == 1 %}
-        <div class="post-wrapper-home">
-            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <h5 class="post-meta">
-                {{ post.date | date: '%B %d, %Y' }} | 
-                {{ post.category }}
-            </h5>
-            <h6 class="post-excerpt">
-            {{ post.excerpt | truncatewords: 20 }}
-            </h6>
-        </div>
-    {% endif %}
-    {% endfor %}
-    </div><!-- #blog-extract-1 -->
-
-    {% for post in site.posts %}
-    {% if forloop.index == 2 %}
-           <a href="{{ post.url }}" class="image-blog-2" {% if post.featured-img %} style="background-image: url({{ post.featured-img }});" {% else %} style="background-image: url('/images/bubble.png');" {% endif %}></a>
-    {% endif %}
-    {% endfor %}
-
-    <div class="blog-extract-2">
-    {% for post in site.posts %}
-    {% if forloop.index == 2 %}
-        <div class="post-wrapper-home">
-            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <h5 class="post-meta">
-                {{ post.date | date: '%B %d, %Y' }} | 
-                {{ post.category }}
-            </h5>
-            <h6 class="post-excerpt">
-            {{ post.excerpt | truncatewords: 20 }}
-            </h6>
-        </div>
-    {% endif %}
-
-    {% endfor %}     
-    </div><!-- #blog-extract-2 -->
-
-    {% for post in site.posts %}
-    {% if forloop.index == 3 %}
-           <a href="{{ post.url }}" class="image-blog-3" {% if post.featured-img %} style="background-image: url({{ post.featured-img }});" {% else %} style="background-image: url('/images/bubble.png');" {% endif %}></a>
-    {% endif %}
-    {% endfor %}
-
-    <div class="blog-extract-3">
-    {% for post in site.posts %}
-    {% if forloop.index == 3 %}
-        <div class="post-wrapper-home">
-            <h4 class="blog-extract-title"><a href="{{ post.url }}">{{ post.post-title }}</a></h4>
-            <h5 class="post-meta">
-                {{ post.date | date: '%B %d, %Y' }} | 
-                {{ post.category }}
-            </h5>
-            <h6 class="post-excerpt">
-            {{ post.excerpt | truncatewords: 20 }}
-            </h6>
-        </div>
-
-    {% endif %}
-    {% endfor %}       
-    </div><!-- #blog-extract-3 -->
-</div>
-
-<script src="js/carousel.js"></script>
-
-
-
+<script src="js/tab.js"></script>
+<script src="js/collapsible.js"></script>
