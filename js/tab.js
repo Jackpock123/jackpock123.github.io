@@ -5,23 +5,23 @@
 selectTabs = function() {
 	document.querySelector('.tablink-1-js').addEventListener('click', function () {
 	// alert('Hello');
-	openPage('tab-content-1', this, 'lightgrey');
+	openPage('tab-content-1', this, '#555');
 	});
 
 	document.querySelector('.tablink-2-js').addEventListener('click', function () {
 	// alert('Hello');
-	openPage('tab-content-2', this, 'lightgrey');
+	openPage('tab-content-2', this, '#555');
 	});
 
 	document.querySelector('.tablink-3-js').addEventListener('click', function () {
 	// alert('Hello');
-	openPage('tab-content-3', this, 'lightgrey');
+	openPage('tab-content-3', this, '#555');
 	});
 
-	document.querySelector('.tablink-4-js').addEventListener('click', function () {
-	// alert('Hello');
-	openPage('tab-content-4', this, 'lightgrey');
-	});
+	// document.querySelector('.tablink-4-js').addEventListener('click', function () {
+	// // alert('Hello');
+	// openPage('tab-content-4', this, 'lightgrey');
+	// });
 }
 
 selectTabs();
