@@ -1,48 +1,77 @@
 --- 
-layout: default
+layout: default-fac
 title: Founders & Coders Application
 ---
 
+<section class="hero-container-fac">
+    <div class="hero home-hero-text ">
+        <div class="prev">
+            <a href="#"  onclick="plusSlides(-1)">&#10094</a>
+        </div>
 
-<section class="hero-fc">
-    <div class="hero-container-standard darker">
-        <h1>Founders & Coders Application.</h1>
+        <div class="home-hero-container-fac">            
+            <div class="js-play"><i class="fa fa-play"></i></div>
+            <div class="js-pause"><i class="fa fa-pause"></i></div>                        
+        </div>        
+
+        <div class="next">
+            <a href="#" onclick="plusSlides(1)">&#10095</a>
+        </div>       
     </div>
-</section>
+
+    <div class="hero home-hero-button">
+        <div>
+            <span class="js-dot dot" onclick="currentSlide(1)"></span>
+            <span class="js-dot dot" onclick="currentSlide(2)"></span>
+            <span class="js-dot dot" onclick="currentSlide(3)"></span>
+        </div>       
+    </div>
+
+    <div class="hero fac-hero-1 fade js-mySlides">
+        <div class="number-text"></div>
+        <div class="caption-text"></div>
+    </div>
+
+    <div class="hero fac-hero-2 fade js-mySlides">
+        <div class="number-text"></div>
+        <div class="caption-text"></div> 
+    </div>
+
+    <div class="hero fac-hero-3 fade js-mySlides">
+        <div class="number-text"></div>
+        <div class="caption-text"></div>
+    </div>
+</section><!-- hero-container-fac -->
+
+
+
 
 <section class="content-container-fc">
 
-    <div class="tab-links">
-        <button type="button" class="tablink tablink-1-js" id="default-open">INTRO.</button>
-        <button type="button" class="tablink tablink-2-js">CODING.</button>
-        <button type="button" class="tablink tablink-3-js">STORY.</button>
-        <button type="button" class="tablink tablink-4-js">INTERESTS.</button>
+    <div class="tab-links">        
+        <button type="button" class="tablink tablink-2-js">CODING JOURNEY</button>
+        <button type="button" class="tablink tablink-1-js" id="default-open">APPLICATION</button>
+        <button type="button" class="tablink tablink-3-js">EXPERIENCE</button>
+        <!-- <button type="button" class="tablink tablink-4-js">INTERESTS</button> -->
     </div>
 
     <div class="content-container-standard">
-        <div id="tab-content-1" class="tabcontent">
-            <h3 class="">Introduction</h3>
-            <p>Please find the prerequisites listed below.</p>
+        <div id="tab-content-1" class="tabcontent">    
 
-            <ul class="content-list">
-                <li><a href="https://github.com/Jackpock123" target="_blank">GitHub Repository</a></li>
-                <li><a href="https://www.freecodecamp.org/jackpockalipse" target="_blank">freeCodeCamp Profile</a></li>
-                <li><a href="https://www.codewars.com/users/jackpockninja" target="_blank">Codewars Profile</a></li>
-                <li><a href="/home.html">Image Carousel</a></li>
-                <li><a href="/FAC/certificates.html" target="">Coding Bootcamp Certificates</a></li>
-            </ul>
+            <p>Hey thank you for stopping by! Below you'll find a little summary about myself and why I'd love to join the FAC team.</p>
 
-            <p>Hey thank you for stopping by! Below you'll find a little summary about myself and why I'd love to join the FAC team.</p> 
+            <div class="prereq-icons">
+                <div><a href="https://github.com/Jackpock123" target="_blank"><img src="/images/fnc/github-icon.png" alt="GitHub icon"></a></div>
+                <div><a href="https://www.freecodecamp.org/jackpockalipse" target="_blank"><img src="/images/fnc/freecodecamp-icon.png" alt="GitHub icon"></a></div>
+                <div><a href="https://www.codewars.com/users/jackpockninja" target="_blank"><img src="/images/fnc/codewars-icon.png" alt="Codewars icon"></a></div>      
+            </div>
 
-            <p>If you'd like to know more details about my coding background, professional experience or interests please click the tabs above or feel free to explore my<a href="/home.html" target="_blank"> Personal Website</a> (it's responsive yayy) and<a href="/about.html" target="_blank"> About Me</a> section which are seperate from the application.</p>
-
-
-
+            <p>Jump to the bottom of the page to check the prerequisites are up to scratch!</p>            
 
             <div class="collapsible-set">
                 <button type="button" class="collapsible-button">Nice to meet you!</button>
                 <div class="collapsible-button-content">
-                    <p>Hey I'm Joe, a professionally qualified Civil Engineer that is passionate about learning how to write beautiful code and designing and delivering things that make the world a better place!</p>
+                    <p>Hey I'm Joe, I was a professionally qualified Civil Engineer (and decided to take a leap of faith to pursue something, over last year coding has become more a centerpoint) that is passionate about learning how to write beautiful code and designing and delivering things that make the world a better place!</p>
 
                     <div class="content-image-collapsible">
                         <img  src="/images/fnc/my-precious.jpg" alt="Passport photo">
@@ -60,9 +89,20 @@ title: Founders & Coders Application
                 <div class="collapsible-button-content">
                     <p>Firstly I like building things :)</p>
 
+                    <p>and here is some stuff I built during learning from the prereq and own self learning.</p>
+
                     <p>Having worked and trained as an Civil Engineer for 9 years; problem solving, product design and project delivery are a big part of my DNA.</p>
 
                     <p>I love the way coding presents an almost infinite number of ways to solve a problem and like engineering it is delivering a technical product or service which is fit for purpose and has the end user's experience in mind.</p>
+
+                    <!-- Since getting stuck into coding I can see that -->
+                    <!-- show me that you've already done it, you've already built things -->
+                    <!-- what is going to make the world a better place? -->
+                    <!-- What bigger picture challenges do I care about? Transport, water, creativity -->
+                    <!-- here are some ideas, why would I build it, why is it valuable, why is it important to help the engineering industry, here is what I want to build -->
+                    <!-- simple tools such as... tangible ideas -->
+                    <!-- show my thinking -->
+                    <!-- whatever ideas are draw them back to why they are meaningful -->
 
                     <div class="content-image-collapsible">
                         <img  src="/images/fnc/unicorn.gif" alt="Riding unicorns whilst coding">
@@ -88,6 +128,9 @@ title: Founders & Coders Application
 
                 <button type="button" class="collapsible-button">Why Founders & Coders?</button>
                 <div class="collapsible-button-content">
+
+                    <!-- Take me to a position where I can build better things -->
+
                     <p>Project based learning is a huge draw for me. I love the practicality of it and I feel like this style of learning has helped me progress massively, not only with my coding but also in other areas of my life such as learning Spanish.</p>
 
                     <p>OneMonth's courses were project focused, requiring me to build something each week for grading. It was this practical application which really reinforced my learning and allowed me to see the bigger picture of why I was using specific code.</p>
@@ -99,9 +142,23 @@ title: Founders & Coders Application
                     </div>
                     <h6 class="caption">SoundCloud create you own playlist App</h6> 
 
+                    <!-- How many meetups I went to -->
+                    <!-- What is the potential of putting people together? -->
+                    <!-- Powerful tying into diversity, get energy from working diff skills sets. -->
+                    <!-- Connect with people from all over the globe and make effort to empathise with them by learning the language -->
+                    <!-- Show how I'm not stereotypical white male. -->
+
                     <p>I'm also drawn to the FAC ethos and culture. Since my first meetup I felt at home in an environment where everyone works together to improve. It was really rewarding partnering up to solve Kata and showed me the potential of peer-based learning when you place people with different skill sets and backgrounds together.</p>
 
                     <p>And of course it is really inspiring to see past alumni include people like the co-founder of Scrimba.</p>
+
+                    <!-- Like the idea of giving back to the community -->
+                    <!-- Understanding that model works, have to be a mentor -->
+                    <!-- Also get the chance to teach a reinforce my learning, pass on learning and contribute to mission of -->
+                    <!-- allowing more people to code, upskilling people and passing it on to make better things -->
+                    <!--  -->
+                    <!-- Dan set it up to teach coding, is the vision to share skills through reprocity  -->
+                    <!-- Collective wisdom -->
 
                     <p>I'm serious about a career in web development so prospective employability is of huge importance to me. It appears as though employers value FAC graduates and it is cool that finding work after the 12 weeks is beneficial to both FAC and the students, aligning everyone towards a similar goal.</p>
                 </div>
@@ -138,6 +195,12 @@ title: Founders & Coders Application
                 </div>
                 <h6 class="caption">Is Google Docs ok?</h6>
 
+                <!-- What can I do term with coding skills -->
+                <!-- Have ideas of what can do to make the world a better place -->
+                <!-- Can bring coding into areas and industries that are underserved VALUE PROPOSITION shortage of coding skills -->
+                <!-- Have a multicultural background so can make it work in any place -->
+                <!-- What I can contribute to FAC. A commitment beyond spreading coding beyond myself -->
+
                 <p>Elevator pitch incoming!</p>                
 
                 <p>Since starting out with programming it's become more apparent to me that my experience in technical design and project delivery helps to provide a strong foundation to launch a career in coding.</p>
@@ -145,6 +208,15 @@ title: Founders & Coders Application
                 <p>Working to high technical standards and following strict quality assurance processes was a fundamental part of my previous role and I'd like to think I'd thrive in a multidisciplinary tech environment.</p>
 
                 <p>I've learnt so much already this year just by applying to the course and I'm hungry and excited to contribute positively as part of the FAC family, working to deliver progressive social projects on behalf of Tech for Better and FAC affiliated companies.</p>
+
+                <!-- How can I contribute positively? -->
+                <!-- Help the cohort with engineering skills -->
+                <!-- Good energy, working under stressful conditions, asking the why question and a specific projectthat I've done that on -->
+
+                <!-- A tangile idea like sharing it in Latin America? -->
+                <!-- Want to get first hand experience of how peer based learning works -->
+                <!-- as i felt like empowering people with coding would be powerful....  -->
+                <!-- This is why I value PBLearning -->
 
                 <p>Uncertainty is something I actively seek out and this has led to working in diverse teams accross the Middle East and Northwest China.</p>
 
@@ -155,23 +227,22 @@ title: Founders & Coders Application
                 </div>
                 <h6 class="caption">Who doesn't love a cheesy story? :)</h6>
 
-                </div>
+                </div>                
                 
             </div>
 
-
-
-
-
-            <!-- <p>Why Founders & Coders?</p> -->
+            <p>To get to know my coding journey better please click on the tabs above to learn about my coding background, professional experience or interests or check out my<a href="/home.html" target="_blank"> Personal Website</a> (it's responsive yayy) and<a href="/about.html" target="_blank"> About Me</a> section which are seperate from the application.</p>
 
             <ul class="content-list">
-                <!-- <li>Community and helping others: social projects</li>
-                <li>Project based just like OneMonth, suits my learning style. A natural problem solver.</li>
-                <li>Involvement in tech in Atkins?</li>
-                <li>Image Carousel</li>
-                <li>Coding Bootcamp Certificates</li> -->
+                <li><a href="/home.html">Image Carousel</a></li>
+                <li><a href="/FAC/certificates.html" target="">Coding Bootcamp Certificates</a></li>
             </ul>
+
+            <div class="prereq-icons">
+                <div><a href="https://github.com/Jackpock123" target="_blank"><img src="/images/fnc/github-icon.png" alt="GitHub icon"></a></div>
+                <div><a href="https://www.freecodecamp.org/jackpockalipse" target="_blank"><img src="/images/fnc/freecodecamp-icon.png" alt="GitHub icon"></a></div>
+                <div><a href="https://www.codewars.com/users/jackpockninja" target="_blank"><img src="/images/fnc/codewars-icon.png" alt="Codewars icon"></a></div>      
+            </div>
 
         </div><!-- tab-content-1 -->
 
@@ -445,7 +516,7 @@ title: Founders & Coders Application
 
             <p>A little background of what I've been up to previously.</p>
 
-            <!-- <ul class="content-list">
+            <ul class="content-list">
                 <li>Civil Engineering</li>
                 <li>Exploration & Travel</li>
                 <li>Spanish</li>
@@ -482,28 +553,17 @@ title: Founders & Coders Application
             </div>
 
             <h4 class="underline">Preparing for Founders & Coders</h4>
-            <p>Since July 2019 I have been based out of Bucaramanga, Colombia. My goal has been to continue advancing my Spanish whilst preparing the best possible application for the F&C bootcamp and taking additional courses on OneMonth so that I can add the most value during the course and beyond.</p> -->
-
-        </div><!-- tab-content-3 -->
+            <p>Since July 2019 I have been based out of Bucaramanga, Colombia. My goal has been to continue advancing my Spanish whilst preparing the best possible application for the F&C bootcamp and taking additional courses on OneMonth so that I can add the most value during the course and beyond.</p>
 
 
 
 
 
 
-
-
-
-
-
-
-
-        <div id="tab-content-4" class="tabcontent">
-            <h3>Interests</h3>
 
             <p>Thoughts on where I would like to take my coding career.</p>
 
-            <!-- <ul class="content-list">
+            <ul class="content-list">
                 <li>Transportation</li>
                 <li>Sustainability & Natural Resources</li>
                 <li>Efficiency</li>
@@ -542,13 +602,15 @@ title: Founders & Coders Application
             <h4 class="underline">Creativity</h4>
             <p>There is so much undiscovered talent out there for everyone to enjoy. Whether you like theatre, live music or dance. People are putting their art out there but if you don't know the right channels it can be difficult to find.</p>
 
-            <p>I'd love to create a network or platform which both empowers people to share their art and helps others to find it.</p> -->
-        </div><!-- tab-content-4 -->
-    </div>
+            <p>I'd love to create a network or platform which both empowers people to share their art and helps others to find it.</p>            
+
+
+        </div><!-- tab-content-3 -->
 
     <!-- <hr class="bottom-line"> -->
 
 </section>
 
+<script src="js/carousel.js"></script>
 <script src="js/tab.js"></script>
 <script src="js/collapsible.js"></script>
