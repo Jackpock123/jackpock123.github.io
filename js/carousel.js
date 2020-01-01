@@ -53,10 +53,10 @@ showSlides(slideIndex);
 // STEP 3: Set interval to automatically change image
 
 // QUESTION: Is it ok to set this variable in the global scope?
-var carouselInterval = setInterval(function() {plusSlides(1);	}, 2000);
+var carouselInterval = setInterval(function() {plusSlides(1);	}, 2500);
 
 
-//When the setInterval() is put in a function clearInterval() does not work.
+//NOTE: When the setInterval() is put in a function clearInterval() does not work. Issue with scope.
 // timeout = function (carouselInterval) {
 // 	var carouselInterval = setInterval(function() {plusSlides(1);	}, 5000);
 // } 
@@ -73,7 +73,7 @@ clickHandlerPause = function() {
 		//alert('We are in clickHandler');
 		clickCount++;
 		if( clickCount%2 == 1) {
-			alert('I am odd');
+			//alert('I am odd');
 			clearInterval(carouselInterval);
 
 			pause.style.display = 'none';
@@ -92,8 +92,8 @@ clickHandlerPlay = function() {
 		//alert('We are in clickHandler');
 		clickCount++;
 		if( clickCount%2 == 0) {
-			alert('I am even');
-			carouselInterval = setInterval(function() {plusSlides(1);	}, 2000);
+			//alert('I am even');
+			carouselInterval = setInterval(function() {plusSlides(1);	}, 2500);
 
 			play.style.display = 'none';
 			pause.style.display = 'block';
@@ -102,6 +102,23 @@ clickHandlerPlay = function() {
 	})
 } 
 clickHandlerPlay();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // var clickCount = 0;
 // clickHandler = function() {
