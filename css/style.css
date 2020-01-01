@@ -59,17 +59,17 @@ a:hover {
 }
 
 .darken {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));	
 }
 
 .darker {
-	background-image: linear-gradient(rgba(255,140,0, 0.9), rgba(255,140,0, 0.9));	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));	
 }
 
 .fa-play, .fa-pause	 {
 	cursor: pointer;
-	font-size: 0.5rem !important;
-	margin-top: 10px;
+	font-size: 0.65rem !important;
+	margin-top: 0px;
 	padding: 5px;
 }
 
@@ -87,7 +87,7 @@ footer {
 	color: #ffffff;	
 }
 
-.main-nav, .footer-nav  {
+.main-nav, .footer-nav, .main-nav-fac  {
 	display: flex;
 	overflow: hidden;
 }
@@ -101,7 +101,7 @@ footer {
 	align-items: center;
 }
 
-nav.main-nav li, .footer-nav li {
+nav.main-nav li, .footer-nav li, nav.main-nav-fac li {
 	padding: 0 5px;
 	font-size: 1.1rem;
 }
@@ -121,6 +121,13 @@ header a {
 footer a {
 	color: grey;
 }
+
+/*STYLES FOR FAC APPLICATION HEADER*/
+
+.fac-nav-fc {
+	margin-right: auto;
+}
+
 
 
 /*STYLES FOR MOBILE HEADER*/
@@ -213,7 +220,7 @@ footer a {
 	text-align: center;
 }
 
-.home-hero-1, .home-hero-2, .home-hero-3 {
+.home-hero-1, .home-hero-2, .home-hero-3, .fac-hero-1, .fac-hero-2, .fac-hero-3 {
 	display: none;
 	justify-content: space-between;
 	align-items: flex-end;
@@ -242,16 +249,19 @@ footer a {
 	height: 80%;
 	justify-content: space-between;
 	align-items: center;
-	z-index: 2;
+	z-index: 200;
 }
 
-.home-hero-container {
+.home-hero-container-fac {
+	position: absolute;
+	top: 25px;
+	left: 50%;
 	max-width: 400px;
 }
 
 .home-hero-container h1 {
 	margin-bottom: 3px;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: 500;
 }
 
@@ -271,7 +281,7 @@ footer a {
 .home-hero-button {
 	justify-content: center;
 	align-items: flex-end;
-	z-index: 1;
+	z-index: 100;
 }
 
 .caption-text {
@@ -408,7 +418,7 @@ h6.post-excerpt {
 
 .content-container-standard {
 	margin: 0 auto;
-	padding: 20px;
+	padding: 10px 20px;
 	max-width: 450px;
 	text-align: center;
 }
@@ -579,10 +589,53 @@ h6.post-excerpt {
 
 
 /*F&C STYLES*/
-.hero-fc {
-	background-image: url('/images/fnc-hero.PNG');
-	background-size: contain;
-	background-position: 0 40%;	
+.hero-container-fac {
+    height: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0;
+    background: white;
+
+	display: grid;
+	grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 300px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"    
+}
+
+.fac-hero-1, .fac-hero-2, .fac-hero-3 {
+	display: none;
+	justify-content: space-between;
+	align-items: flex-end;
+	background-size: cover;
+	background-position: bottom center;
+	
+}
+
+.fac-hero-1 {
+	background-image: url('/images/fnc/hero-unsplash-3.jpg');
+}
+
+.fac-hero-2 {
+	background-image: url('/images/fnc/hero-unsplash-4.jpg');
+	background-position: center center;
+
+}
+
+.fac-hero-3 {
+	background-image: url('/images/fnc/hero-unsplash-1.jpg');
+	background-position: 50% center;
+}
+
+.prereq-icons {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.prereq-icons img {
+	width: 80px;
+	border-radius: 10%;
 }
 
 .content-container-fc {
@@ -657,7 +710,7 @@ ul.content-list  {
 
 .content-image-collapsible img {
     width: 100%;
-    padding: 10px 15px 0 15px;    
+    padding: 0 15px;    
 }
 
 /*Full page tab styles https://www.w3schools.com/howto/howto_js_full_page_tabs.asp*/
@@ -671,7 +724,7 @@ button.tablink {
 	display: flex;
 	justify-content: center;
 	flex: 1 1 60px;
-	background-color: #555;
+	background-color: lightgrey;
 	color: white;
 
 	border: none;
