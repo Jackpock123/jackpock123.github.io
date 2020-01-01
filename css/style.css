@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family: serif;
+	font-family: serif, 'Lato', sans-serif;
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
@@ -68,7 +68,7 @@ a:hover {
 
 .fa-play, .fa-pause	 {
 	cursor: pointer;
-	font-size: 0.65rem !important;
+	font-size: 0.75rem !important;
 	margin-top: 0px;
 	padding: 5px;
 }
@@ -253,10 +253,10 @@ footer a {
 }
 
 .home-hero-container-fac {
-	position: absolute;
-	top: 25px;
-	left: 50%;
-	max-width: 400px;
+	position: relative;
+	top: 120px;
+	/*left: 50%;*/
+	/*max-width: 400px;*/
 }
 
 .home-hero-container h1 {
@@ -614,17 +614,17 @@ h6.post-excerpt {
 }
 
 .fac-hero-1 {
-	background-image: url('/images/fnc/hero-unsplash-3.jpg');
+	background-image: url('/images/fnc/hero-unsplash-3.JPG');
 }
 
 .fac-hero-2 {
-	background-image: url('/images/fnc/hero-unsplash-4.jpg');
+	background-image: url('/images/fnc/hero-unsplash-4.JPG');
 	background-position: center center;
 
 }
 
 .fac-hero-3 {
-	background-image: url('/images/fnc/hero-unsplash-1.jpg');
+	background-image: url('/images/fnc/hero-unsplash-1.JPG');
 	background-position: 50% center;
 }
 
