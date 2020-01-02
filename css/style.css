@@ -627,13 +627,19 @@ h6.post-excerpt {
 	background-position: 50% center;
 }
 
-.prereq-icons {
+.prereq-icons, .prereq-icons-journey {
+	margin: 25px; 
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .prereq-icons img {
 	width: 80px;
+	border-radius: 10%;
+}
+
+.prereq-icons-journey img {
+	width: 100%;
 	border-radius: 10%;
 }
 
@@ -1029,7 +1035,7 @@ button.tablink {
 }
 
 .center {
-	text-align: center;
+	text-align: center !important;
 }
 
 .left {
@@ -1038,4 +1044,8 @@ button.tablink {
 
 .italic {
 	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
 }
