@@ -13,7 +13,7 @@
 }
 
 body {
-	font-family: serif, 'Lato', sans-serif;
+	font-family: helvetica, 'Lato', sans-serif;
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
@@ -51,7 +51,7 @@ a:hover {
 }
 
 .darker {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));	
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));	
 }
 
 .fa-play, .fa-pause	 {
@@ -240,14 +240,14 @@ footer a {
 	z-index: 200;
 }
 
-.home-hero-container-fac {
+/*.home-hero-container-fac {
 	position: relative;
 	top: 120px;
-}
+}*/
 
 .home-hero-container h1 {
 	margin-bottom: 3px;
-	font-size: 2.5rem;
+	font-size: 3rem;
 	font-weight: 500;
 }
 
@@ -779,7 +779,7 @@ button.tablink {
 	border: none;
 	text-align: left;
 	/*Have to define the font styles again but not sure why*/
-	font-family: serif;
+	font-family: helvetica;
 	font-size: 1.1rem;
 }
 
