@@ -46,18 +46,6 @@ a:hover {
   margin: 20px auto;
 }
 
-.underline {
-	text-decoration: underline;
-}
-
-.center {
-	text-align: center;
-}
-
-.italic {
-	font-style: italic;
-}
-
 .darken {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));	
 }
@@ -255,8 +243,6 @@ footer a {
 .home-hero-container-fac {
 	position: relative;
 	top: 120px;
-	/*left: 50%;*/
-	/*max-width: 400px;*/
 }
 
 .home-hero-container h1 {
@@ -588,6 +574,19 @@ h6.post-excerpt {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*F&C STYLES*/
 .hero-container-fac {
     height: 100%;
@@ -707,10 +706,8 @@ ul.content-list  {
     text-align: center;    
 }
 
-
 .content-image-collapsible img {
-    width: 100%;
-    padding: 0 15px;    
+    width: 100%;    
 }
 
 /*Full page tab styles https://www.w3schools.com/howto/howto_js_full_page_tabs.asp*/
@@ -756,11 +753,6 @@ button.tablink {
 #tab-content-4 {
 	background-color: white;
 }
-
-
-
-
-
 
 
 /*Collapsible button based on W3 Schools*/
@@ -812,6 +804,47 @@ button.tablink {
 
 .active-collapsible:after {
   content: "\2212";
+}
+
+
+/*Background colour change animation*/
+
+.background-pulse {
+  animation: background-pulse 3s 3;
+  animation-delay: 5s;
+}
+
+@keyframes background-pulse {
+  0% {
+    background-color: #777;
+  }
+
+  50% {
+    background-color: #FF4136;
+  }
+
+  100% {
+    background-color: #777;
+  }
+}
+
+.text-pulse {
+  animation: text-pulse 5s infinite;
+  animation-delay: 5s;
+}
+
+@keyframes text-pulse {
+  0% {
+    color: #777;
+  }
+
+  50% {
+    color: orange;
+  }
+
+  100% {
+    color: #777;
+  }
 }
 
 
@@ -953,6 +986,15 @@ button.tablink {
     grid-template-rows: 200px;
 }
 
+.content-container-fc h6 {
+	padding: 0 15px;
+}
+
+
+.content-image-collapsible img {
+    width:92%;       
+}
+
 }
 
 
@@ -982,6 +1024,18 @@ button.tablink {
 
 
 
+.underline {
+	text-decoration: underline;
+}
 
+.center {
+	text-align: center;
+}
 
+.left {
+	text-align: left;
+}
 
+.italic {
+	font-style: italic;
+}
