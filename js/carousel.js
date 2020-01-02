@@ -53,14 +53,14 @@ showSlides(slideIndex);
 // STEP 3: Set interval to automatically change image
 
 // QUESTION: Is it ok to set this variable in the global scope?
-var carouselInterval = setInterval(function() {plusSlides(1);	}, 2500);
+var carouselInterval = setInterval(function() {plusSlides(1);	}, 5000);
 
 
-//NOTE: When the setInterval() is put in a function clearInterval() does not work. Issue with scope.
-// timeout = function (carouselInterval) {
-// 	var carouselInterval = setInterval(function() {plusSlides(1);	}, 5000);
-// } 
-// timeout(); 
+	//NOTE: When the setInterval() is put in a function clearInterval() does not work. Issue with scope.
+	// timeout = function (carouselInterval) {
+	// 	var carouselInterval = setInterval(function() {plusSlides(1);	}, 5000);
+	// } 
+	// timeout(); 
 
 
 //STEP 4: Define functions that stop and start interval timer depending if the click count is odd or even
@@ -93,7 +93,7 @@ clickHandlerPlay = function() {
 		clickCount++;
 		if( clickCount%2 == 0) {
 			//alert('I am even');
-			carouselInterval = setInterval(function() {plusSlides(1);	}, 2500);
+			carouselInterval = setInterval(function() {plusSlides(1);	}, 5000);
 
 			play.style.display = 'none';
 			pause.style.display = 'block';
@@ -120,28 +120,28 @@ clickHandlerPlay();
 
 
 
-// var clickCount = 0;
-// clickHandler = function() {
-// 	document.querySelector('.js-pause', '.js-play').addEventListener('click', function() {
-// 		var play = document.querySelector('.js-play');
-// 		var pause = document.querySelector('.js-pause');
-// 		//alert('We are in clickHandler');
-// 		clickCount++;
-// 		if( clickCount%2 == 1) {
-// 			alert('I am odd');
-// 			clearInterval(carouselInterval);
+	// var clickCount = 0;
+	// clickHandler = function() {
+	// 	document.querySelector('.js-pause', '.js-play').addEventListener('click', function() {
+	// 		var play = document.querySelector('.js-play');
+	// 		var pause = document.querySelector('.js-pause');
+	// 		//alert('We are in clickHandler');
+	// 		clickCount++;
+	// 		if( clickCount%2 == 1) {
+	// 			alert('I am odd');
+	// 			clearInterval(carouselInterval);
 
-// 			pause.style.display = 'none';
-// 			play.style.display = 'block';
-// 		} else {
-// 			alert('I am even')
-// 			carouselInterval = setInterval(function() {plusSlides(1);	}, 10000);
+	// 			pause.style.display = 'none';
+	// 			play.style.display = 'block';
+	// 		} else {
+	// 			alert('I am even')
+	// 			carouselInterval = setInterval(function() {plusSlides(1);	}, 10000);
 
-// 		}
-// 		console.log(clickCount);
-// 	})
-// } 
-// clickHandler();
+	// 		}
+	// 		console.log(clickCount);
+	// 	})
+	// } 
+	// clickHandler();
 
 
 
